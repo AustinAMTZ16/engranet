@@ -87,13 +87,13 @@
 
                     <!--CAMPOS OCULTOS -->
                     <div class="form-group">
-                        <input class="form-control" type="hidden" name="asunto" value="Interesado">
+                        <input class="form-control" type="hidden" name="asunto" value="Prospecto interesado">
                     </div>
                     <div class="form-group">
-                        <input class="form-control" type="hidden" name="dominioOrigen" value="hotelcasadepiedra.com">
+                        <input class="form-control" type="hidden" name="dominioOrigen" value="engranetmx.com">
                     </div>
                     <div class="form-group">
-                        <input class="form-control" type="hidden" name="giroDominio" value="Servicio de hotel">
+                        <input class="form-control" type="hidden" name="giroDominio" value="Marketing digital">
                     </div>
                     <div class="form-group">
                         <input class="form-control" type="hidden" name="categoriaProspecto" value="Prospecto">
@@ -102,7 +102,7 @@
                         <input class="form-control" type="hidden" name="estadoSistema" value="Activo">
                     </div>
                     <div class="form-group">
-                        <input class="form-control" type="hidden" name="conversacion" value="Bitácora de conversación">
+                        <input class="form-control" type="hidden" name="conversacion" value="Registro desde Pagina web">
                     </div>
                     <!--FIN CAMPOS OCULTOS -->
 
