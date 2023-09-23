@@ -25,7 +25,7 @@
                     </li>
                 <li class="nav-item"><a class="nav-link" href="index.php?view=blog">Blog</a></li>
                 </li>
-                <li class="nav-item"><a class="nav-link" href="index.php?view=contacto">Contacto</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.php?view=recepcion">Contacto</a></li>
             </ul>
         </div>
     </div>
