@@ -14,7 +14,7 @@
         <div class="row text-center">
             <div class="center">
                 <img src="./assents/img1.png" class="" alt="" width="40%" height="60%" height="300px">
-                <h4 class=""><br>Estado de la misión</h4>
+                <h4 class=""><br>Misión</h4>
                 <p class="text-muted">
                 En Engranet, nuestra misión es empoderar a las pequeñas empresas locales en México con estrategias de marketing digital efectivas y accesibles que impulsen el éxito.Creemos que todas las empresas, independientemente de su tamaño, merecen la oportunidad de prosperar en el panorama digital actual.Trabajamos incansablemente para brindar servicios de alta calidad que tengan un impacto positivo en el crecimiento y la presencia en línea de nuestros clientes.
                 </p><a class="btn btn-secondary" href="index.php?view=acerca">Acerca de &raquo;</a></p>

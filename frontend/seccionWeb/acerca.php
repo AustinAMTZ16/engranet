@@ -11,7 +11,7 @@
                 <div class="timeline-panel">
                     <div class="timeline-heading">
                         <h4>2022-2023</h4>
-                        <h4 class="subheading">Estado de la misión</h4>
+                        <h4 class="subheading">Misión</h4>
                     </div>
                     <div class="timeline-body"><p class="text-muted">En Engranet, nuestra misión es empoderar a las pequeñas empresas locales en México con estrategias de marketing digital efectivas y accesibles que impulsen el éxito.Creemos que todas las empresas, independientemente de su tamaño, merecen la oportunidad de prosperar en el panorama digital actual.Trabajamos incansablemente para brindar servicios de alta calidad que tengan un impacto positivo en el crecimiento y la presencia en línea de nuestros clientes.</p></div>
                 </div>
