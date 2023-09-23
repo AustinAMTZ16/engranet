@@ -37,7 +37,7 @@
 								<div class="docs-block">
 									<h5>Recepción</h5>
 									<div class="doc-labels">										
-										<i class="icon-receipt"></i> Mis habitaciones
+										<i class="icon-receipt"></i> Horarios disponibles:
 									</div>
 								</div>
 							</div>
@@ -51,7 +51,7 @@
 
 							<div class="documents-header">
 								<h3>Este Dia <span class="date" id="todays-date"></span></h3>
-								<div class="custom-search">
+								<!-- <div class="custom-search">
 
 									<form class="example" method="POST" action="" style="margin:auto;max-width:300px">
 										<input type="searchs" class="search-query" placeholder="Buscar habitación ..."
@@ -63,7 +63,7 @@
 
 
 
-								</div>
+								</div> -->
 							</div>
 							<div class="documentsContainerScroll">
 								<div class="documents-body">
@@ -97,13 +97,13 @@
 												<?php
 
 													if ($row->estadha == '1') {
-														echo '<a href="index.php?view=mostrar.php" class="btn btn-white btn-lg">Disponible</a>';
+														echo '<a href="index.php?view=mostrar.php" class="btn btn-white btn-lg">Agendar cita</a>';
 														// code...
 													} else if ($row->estadha == '2') {
 														//echo '<button class="btn btn-white btn-lg">Ocupado</button>';
-														echo '<a href="../rs_habitacion/ocupado.php?id=' . $row->idhab . '" class="btn btn-white btn-lg">Ocupado</a>';
+														echo '<a href="../rs_habitacion/ocupado.php?id=' . $row->idhab . '" class="btn btn-white btn-lg">No disponible</a>';
 													} else {
-														echo '<a href="../rs_habitacion/limpieza.php?id=' . $row->idhab . '" class="btn btn-white btn-lg">Limpieza</a>';
+														echo '<a href="../rs_habitacion/limpieza.php?id=' . $row->idhab . '" class="btn btn-white btn-lg">En curso</a>';
 														//echo '<button class="btn btn-white btn-lg">Limpieza</button>';
 													}
 												?>
@@ -130,11 +130,11 @@
 										<div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
 											<div class="doc-block">
 												<div class="doc-icon">
-													<img src="backend/img/room.svg" alt="Doc Icon" />
+													<img src="./assents/calendario.png" alt="Doc Icon" />
 												</div>
-												<div class="doc-title">N°:
+												<!-- <div class="doc-title">N°:
 													<?php echo $row->numiha; ?>
-												</div>
+												</div> -->
 												<div class="doc-title">
 													<?php echo $row->detaha; ?>
 												</div>
@@ -143,13 +143,13 @@
 
 
 													if ($row->estadha == 1) {
-														echo '<a href="frontend/seccionWeb/mostrar.php?id=' . $row->idhab . '" class="btn btn-white btn-lg">Disponible</a>';
+														echo '<a href="frontend/seccionWeb/mostrar.php?id=' . $row->idhab . '" class="btn btn-white btn-lg">Agendar cita</a>';
 														// code...
 													} else if ($row->estadha == 2) {
 														//echo '<button class="btn btn-white btn-lg">Ocupado</button>';
-														echo '<a href="#" class="btn btn-white btn-lg">Ocupado</a>';
+														echo '<a href="#" class="btn btn-white btn-lg">No disponible</a>';
 													} else {
-														echo '<a href="#" class="btn btn-white btn-lg">Limpieza</a>';
+														echo '<a href="#" class="btn btn-white btn-lg">En curso</a>';
 														//echo '<button class="btn btn-white btn-lg">Limpieza</button>';
 													}
 												?>
@@ -185,3 +185,16 @@
 	</div>
 </section>
 <!-- Main container end -->
+
+<div class="padre">
+        <div class="hijo">
+            <div class="fila">
+                <div class="columna12">
+                    <?php
+                    // require('./frontend/seccionWeb/restaurante.php');
+                    require('./frontend/seccionWeb/contacto.php');
+                    ?>
+                </div>
+            </div>
+        </div>
+</div>

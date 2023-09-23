@@ -1,10 +1,10 @@
 <!-- Masthead-->
 <header class="masthead">
     <div class="container">
-        <br><br><br><br><br>
-        <div class="masthead-subheading">Bienvenidos a Engranet</div>        
-        <div class="masthead-heading text-uppercase">agencia de soluciones tecnológicas</div>        
-        <a class="btn btn-xl text-uppercase" style="background: #212529; color: aliceblue;" href="#services">Contactar asesor</a>
+        <br><br><br><br><br><br><br><br><br><br>
+        <div style="font-size: 28px;" class="masthead-heading text-uppercase">Soluciones innovadoras de marketing digital para pequeñas empresas.</div> 
+        <div class="masthead-subheading" style="font-size: 20px;">Bienvenido a engranet, el club de marketing líder en México. Brindamos soluciones de marketing digital efectivas y asequibles para ayudar a las pequeñas empresas a prosperar en el panorama digital actual.</div>      
+        <a class="btn btn-xl text-uppercase" style="background: #ffa552; color: aliceblue;" href="index.php?view=servicios">Ver todos los servicios</a>
     </div>
 </header>
 
@@ -13,15 +13,159 @@
     <div class="container">
         <div class="row text-center">
             <div class="center">
-                <img src="BackWeb/assets/img/fondo.jpg" class="" alt="" width="80%" height="300px">
-                <h4 class=""><br>Bienvenidos a Engranet</h4>
+                <img src="./assents/img1.png" class="" alt="" width="40%" height="60%" height="300px">
+                <h4 class=""><br>Estado de la misión</h4>
                 <p class="text-muted">
-                    Una agencia de soluciones tecnológicas líder en Monterrey, Nuevo León. Nos especializamos en proporcionar soluciones tecnológicas personalizadas para empresas de diversos tamaños y sectores. Nuestro equipo de expertos en tecnología tiene años de experiencia en la creación de soluciones de calidad para ayudar a las empresas a alcanzar sus objetivos de negocio.
-                </p>
-                <p class="text-muted">
-                    En Engranet, nos enfocamos en ofrecer soluciones personalizadas y efectivas para cada una de las necesidades de nuestros clientes. Si necesitas ayuda en alguno de estos servicios o en cualquier otro aspecto de tecnología, contáctanos hoy para ver cómo podemos ayudarte a alcanzar tus objetivos de negocio.
-                </p>
+                En Engranet, nuestra misión es empoderar a las pequeñas empresas locales en México con estrategias de marketing digital efectivas y accesibles que impulsen el éxito.Creemos que todas las empresas, independientemente de su tamaño, merecen la oportunidad de prosperar en el panorama digital actual.Trabajamos incansablemente para brindar servicios de alta calidad que tengan un impacto positivo en el crecimiento y la presencia en línea de nuestros clientes.
+                </p><a class="btn btn-secondary" href="index.php?view=acerca">Acerca de &raquo;</a></p>
             </div>
+        </div>
+    </div>
+</section>
+<!-- Marcas y caracteristicas y beneficios-->
+<section class="page-section bg-light" id="marcas">
+    <div class="container">
+        <div class="row">
+            <h2 class="section-heading text-uppercase">Principaless clientes:</h2>
+            <div class="col-lg-2 col-sm-3 mb-3">
+                <!-- Portfolio item 1-->
+                <div class="portfolio-item">
+                    <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content"></div>
+                        </div>
+                        <img class="img-fluid" src="./assents/marca6.jpg" alt="..." />
+                    </a>
+                    <!-- <div class="portfolio-caption">
+                        <div class="portfolio-caption-heading">Hamburgesas</div>
+                        <div class="portfolio-caption-subheading text-muted">Comida rápida</div>
+                    </div> -->
+                </div>
+            </div>
+            <div class="col-lg-2 col-sm-3 mb-3">
+                <!-- Portfolio item 2-->
+                <div class="portfolio-item">
+                    <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content"></div>
+                        </div>
+                        <img class="img-fluid" src="./assents/marca7.jpg" alt="..." />
+                    </a>
+                    <!-- <div class="portfolio-caption">
+                        <div class="portfolio-caption-heading">Vinos</div>
+                        <div class="portfolio-caption-subheading text-muted">Tinto & Blanco</div>
+                    </div> -->
+                </div>
+            </div>
+            <div class="col-lg-2 col-sm-3 mb-3">
+                <!-- Portfolio item 3-->
+                <div class="portfolio-item">
+                    <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content"></div>
+                        </div>
+                        <img class="img-fluid" src="./assents/marca8.jpg" alt="..." />
+                    </a>
+                    <!-- <div class="portfolio-caption">
+                        <div class="portfolio-caption-heading">Platillos</div>
+                        <div class="portfolio-caption-subheading text-muted">Gourmet</div>
+                    </div> -->
+                </div>
+            </div>
+            <div class="col-lg-2 col-sm-3 mb-3">
+                <!-- Portfolio item 3-->
+                <div class="portfolio-item">
+                    <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content"></div>
+                        </div>
+                        <img class="img-fluid" src="./assents/marca4.jpg" alt="..." />
+                    </a>
+                    <!-- <div class="portfolio-caption">
+                        <div class="portfolio-caption-heading">Platillos</div>
+                        <div class="portfolio-caption-subheading text-muted">Gourmet</div>
+                    </div> -->
+                </div>
+            </div>
+            <div class="col-lg-2 col-sm-3 mb-3">
+                <!-- Portfolio item 3-->
+                <div class="portfolio-item">
+                    <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content"></div>
+                        </div>
+                        <img class="img-fluid" src="./assents/marca9.jpg" alt="..." />
+                    </a>
+                    <!-- <div class="portfolio-caption">
+                        <div class="portfolio-caption-heading">Platillos</div>
+                        <div class="portfolio-caption-subheading text-muted">Gourmet</div>
+                    </div> -->
+                </div>
+            </div>
+
+        </div>
+    </div><br><br>
+    <div class="container">
+        <h2 id="">Características y beneficios</h2>
+        <div class="row g-5">
+        <div class="col-md-6">
+            <h4 class="text-body-emphasis">Características</h4>
+            <!-- <p>Ready to go beyond the starter template? Check out these open source projects that you can quickly duplicate to a new GitHub repository.</p> -->
+            <ul class="list-unstyled ps-0">
+                <li>
+                    <i class="icon-check mb-1" href="#"></i>
+                    Soluciones de marketing eficaces y asequibles.
+                </li>
+                <li>
+                    <i class="icon-check mb-1" href="#"></i>
+                    Estrategias de marketing digital personalizadas.
+                </li>
+                <li>
+                    <i class="icon-check mb-1" href="#"></i>
+                    Gestión de redes sociales.
+                </li>
+                <li>
+                    <i class="icon-check mb-1" href="#"></i>
+                    Optimización de motores de búsqueda.
+                </li>
+                <li>
+                    <i class="icon-check mb-1" href="#"></i>
+                    Correo de propaganda.
+                </li>
+                <li>
+                    <i class="icon-check mb-1" href="#"></i>
+                    Análisis e informes.
+                </li>
+
+            </ul>
+        </div>
+
+        <div class="col-md-6">
+            <h4 class="text-body-emphasis">beneficios</h4>
+            <!-- <p>Características.</p> -->
+            <ul class="list-unstyled ps-0">
+                <li>
+                    <i class="icon-check mb-1" href="#"></i>
+                    Presencia en línea mejorada.
+                </li>
+                <li>
+                    <i class="icon-check mb-1" href="#"></i>
+                    Mayor visibilidad y alcance.
+                </li>
+                <li>
+                    <i class="icon-check mb-1" href="#"></i>
+                    Mayor compromiso del cliente.
+                </li>
+                <li>
+                    <i class="icon-check mb-1" href="#"></i>
+                    Más clientes potenciales y ventas.
+                </li>
+                <li>
+                    <i class="icon-check mb-1" href="#"></i>
+                    Soporte y orientación de expertos.
+                </li>
+            </ul>
+        </div>
         </div>
     </div>
 </section>
@@ -29,78 +173,158 @@
 <section class="page-section" id="services">
     <div class="container">
         <div class="text-center">
-            <h2 class="section-heading text-uppercase">Nuestros servicios incluyen:</h2>
-            <h3 class="section-subheading text-muted">Sitios web, Tiendas digitales, Bussines Intelligent</h3>
+            <h2 class="section-heading text-uppercase">Todos los servicios:</h2>
+            <h3 class="section-subheading text-muted">Paginas web, Formularios web, ChatBoot Whatssapp</h3>
         </div>
         <div>
             
         </div>
         <div class="row text-center">
-            <div class="col-md-6">
+            <div class="col-md-4">
                 <!-- <span class="fa-stack fa-4x">
                     <i class="fas fa-circle fa-stack-2x "></i>
                     <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
                 </span>                -->
-                <img src="BackWeb/assets/img/eco.jpeg" class="card-img-top" alt="">
-                <h4 class="my-3">Páginas web</h4>
-                <p class="text-muted">
-                    Creamos páginas web personalizadas que son únicas y eficientes en términos de costos. Nuestro equipo de diseñadores y desarrolladores trabaja de la mano para crear sitios web que se adapten a la imagen de la marca y sean fáciles de usar para los visitantes.
-                </p>
+                <img src="./assents/servicio1.png" class="card-img-top" alt="">
+                <h4 class="my-3">Plan Básico - "Presencia en Línea"</h4>
+                <!-- <p class="text-muted">
+                    * Gestión de una red social (p. ej., Facebook o Instagram).
+                    * Publicación de contenido 3 veces por semana.
+                    * Optimización de perfil y portada de la red social.
+                    * Informe mensual de análisis de rendimiento.
+                    <br>Tarifa Mensual: 2,000 pesos mexicanos
+                </p> -->
+                <a class="btn btn-secondary" href="index.php?view=servicios">Ver más &raquo;</a>
             </div>
             
-            <div class="col-md-6">
+            <div class="col-md-4">
                 <!-- <span class="fa-stack fa-4x">
                     <i class="fas fa-circle fa-stack-2x "></i>
                     <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
                 </span> -->
-                <img src="BackWeb/assets/img/web.jpeg" class="card-img-top" alt="">
-                <h4 class="my-3">Comercio electrónico</h4>
-                <p class="text-muted">
-                    Ayudamos a las empresas a vender sus productos en línea con nuestra solución de comercio electrónico personalizada. Nuestro equipo puede crear una tienda en línea fácil de usar y que cumpla con los requerimientos de seguridad y privacidad de los usuarios.
-                </p>
+                <img src="./assents/servicio2.png" class="card-img-top" alt="">
+                <h4 class="my-3">Plan Estándar - "Crecimiento Digital"</h4>
+                <!-- <p class="text-muted">
+                    * Gestión de dos redes sociales (p. ej., Facebook e Instagram).
+                    * Publicación de contenido 5 veces por semana.
+                    * Diseño de imágenes y gráficos para redes sociales (hasta 10 por mes).
+                    * Publicación de anuncios en Facebook Ads (presupuesto publicitario no incluido).
+                    * Optimización de perfiles y portadas de las redes sociales.
+                    * Informe quincenal de análisis de rendimiento.
+                    <br>Tarifa Mensual: 4,000 pesos mexicanos
+                </p> -->
+                <a class="btn btn-secondary" href="index.php?view=servicios">Ver más &raquo;</a>
             </div>
-            <div class="col-md-6">
+
+            <div class="col-md-4">
                 <!-- <span class="fa-stack fa-4x">
                     <i class="fas fa-circle fa-stack-2x "></i>
                     <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
                 </span>                -->
-                <img src="BackWeb/assets/img/eco.jpeg" class="card-img-top" alt="">
-                <h4 class="my-3">SEO</h4>
-                <p class="text-muted">
-                    Ayudamos a mejorar el ranking de los sitios web en los motores de búsqueda mediante la implementación de estrategias de SEO (optimización de motores de búsqueda) eficientes. Desde la investigación de palabras clave hasta la creación de contenido relevante, nuestro equipo de especialistas en SEO puede ayudar a aumentar la visibilidad en línea de las empresas.
-                </p>
+                <img src="./assents/servicio3.png" class="card-img-top" alt="">
+                <h4 class="my-3">Plan Premium - "Presencia Total en Línea"</h4>
+                <!-- <p class="text-muted">
+                    * Gestión de tres redes sociales (p. ej., Facebook, Instagram y Twitter).
+                    * Publicación de contenido diario.
+                    * Diseño de imágenes y gráficos para redes sociales (hasta 20 por mes).
+                    * Publicación y gestión de anuncios en Facebook Ads (presupuesto publicitario incluido hasta cierto límite).
+                    * Optimización de perfiles y portadas de las redes sociales.
+                    * Monitoreo continuo y respuesta a comentarios y mensajes.
+                    * Informe semanal de análisis de rendimiento.
+                    <br>Tarifa Mensual: 6,000 pesos mexicanos
+                </p> -->
+                <a class="btn btn-secondary" href="index.php?view=servicios">Ver más &raquo;</a>
             </div>
             
-            <div class="col-md-6">
+            <div class="col-md-4">
                 <!-- <span class="fa-stack fa-4x">
                     <i class="fas fa-circle fa-stack-2x "></i>
                     <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
                 </span> -->
-                <img src="BackWeb/assets/img/web.jpeg" class="card-img-top" alt="">
-                <h4 class="my-3">Chatbots</h4>
-                <p class="text-muted">
-                    Creamos chatbots personalizados para ayudar a las empresas a mejorar la atención al cliente y las ventas. Nuestros chatbots utilizan inteligencia artificial para proporcionar una experiencia de usuario más amigable y para resolver las dudas de los clientes en tiempo real.
-                </p>
-            </div>
-            <div class="col-md-6">
-                <!-- <span class="fa-stack fa-4x">
-                    <i class="fas fa-circle fa-stack-2x "></i>
-                    <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
-                </span> -->
-                <img src="BackWeb/assets/img/web.jpeg" class="card-img-top" alt="">
-                <h4 class="my-3">CRM</h4>
-                <p class="text-muted">
-                    Ayudamos a las empresas a gestionar sus relaciones con los clientes mediante la implementación de sistemas de gestión de relaciones con los clientes (CRM). Nuestros expertos pueden ayudar a las empresas a automatizar el proceso de seguimiento y la gestión de las relaciones con los clientes.
-                </p>
+                <img src="./assents/servicio4.png" class="card-img-top" alt="">
+                <h4 class="my-3">Servicios Adicionales (Costos Adicionales)</h4>
+                <!-- <p class="text-muted">
+                    * Creación de sitio web básico: A partir de 4,000 pesos mexicanos (dependiendo de la complejidad).
+                    * Campañas publicitarias adicionales en Facebook Ads: Costo del presupuesto publicitario más un porcentaje (por ejemplo, el 20%) como tarifa de gestión.
+                    Servicios de diseño gráfico adicionales: Tarifa por proyecto
+                </p> -->
+                <a class="btn btn-secondary" href="index.php?view=servicios">Ver más &raquo;</a>
             </div>
         </div>
     </div>
 </section>
 
+<!-- <section class="page-section" id="amenidades">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <img src="../../assents/aldahir.png" alt="" class="bd-placeholder-img rounded-circle" width="140" height="140" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <h2 class="fw-normal">Aldahir Martinez</h2>
+                <span>Cofundador & director ejecutivo</span>
+                <p>El liderazgo visionario de Aldahir impulsa el éxito de Engranet al brindar estrategias de marketing digital efectivas y accesibles a las pequeñas empresas.Es un gurú del marketing.</p>
+                <p>
+            </div>
+            <div class="col-lg-6">
+                <img src="../../assents/erick.png" alt="" class="bd-placeholder-img rounded-circle" width="140" height="140" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <h2 class="fw-normal">Erick Marcia</h2>
+                <span>Desarrolador FullStack</span>
+                <p>Un colaborador excepcional que, con su experiencia como programador de area y su compromiso con el éxito empresarial, contribuye significativamente al crecimiento y la prosperidad de las pequeñas empresas y las empresas nacionales, como Soriana, en México.</p>
+                <p>
+            </div>
+        </div>
+    </div>
+</section> -->
+<!-- Team-->
+<section class="page-section bg-light" id="team">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">NUESTRO INCREÍBLE EQUIPO</h2>           
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="team-member">
+                    <img class="mx-auto rounded-circle" src="./assents/aldahir.png" alt="..." />
+                    <h4>Aldahir Martinez</h4>
+                    <span>Cofundador & director ejecutivo</span>
+                    <p class="text-muted">El liderazgo visionario de Aldahir impulsa el éxito de Engranet al brindar estrategias de marketing digital efectivas y accesibles a las pequeñas empresas.Es un gurú del marketing.</p>
+
+                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Twitter Profile"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Facebook Profile"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="team-member">
+                    <img class="mx-auto rounded-circle" src="./assents/erick.png" alt="..." />
+                    <h4>Erick Marcia</h4>
+                    <span>Desarrolador FullStack</span>
+                    <p class="text-muted">Un colaborador excepcional que, con su experiencia como programador de area y su compromiso con el éxito empresarial, contribuye significativamente al crecimiento y la prosperidad de las pequeñas empresas y las empresas nacionales, como Soriana, en México.</p>
+
+                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen Twitter Profile"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen Facebook Profile"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <!-- <div class="col-lg-4">
+                <div class="team-member">
+                    <img class="mx-auto rounded-circle" src="BackWeb/assets/img/team/3.jpg" alt="..." />
+                    <h4>Irving Hernández Mata</h4>
+                    <p class="text-muted">Integrante</p>
+
+                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker Twitter Profile"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker Facebook Profile"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div> -->
+        </div>
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center"><p class="large text-muted">Conozca al equipo del Engranet Marketing Club: dedicado a ayudar a las pequeñas empresas a prosperar en el mundo digital.</p></div>
+        </div>
+    </div>
+</section>
 
 
-
-<div class="paadre">
+<div class="padre">
         <div class="hijo">
             <div class="fila">
                 <div class="columna12">

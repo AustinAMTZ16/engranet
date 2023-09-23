@@ -78,8 +78,8 @@
 
         if($inserted>0){
 
-            mail($correo, "Hotel Casa de Piedra", 'Su reservación está listo un asesor se podrá en contacto.');
-            mail('soporte@hotelcasadepiedra.com', "Hotel Casa de Piedra", 'El sistema detectó una reservación por favor de revisar el sistema de gestión del hotel');
+            mail($correo, "Soporte agendado", 'Su cita fue agendada un asesor se podrá en contacto.');
+            mail('soporte@engranetmx.com', "Soporte agendado", 'El sistema detectó una cita por favor de revisar el sistema de gestión.');
         }else{
                 
 

@@ -8,7 +8,7 @@
     <title>SolMTY</title>
     <!-- <link rel="stylesheet" href="./backend/css/orden.css"> -->
     <!-- Favicon-->
-    <link rel="icon" type="image/x-icon" href="BackWeb/assets/img/solmty.png" />
+    <link rel="icon" type="image/x-icon" href="./assents/logo.jpg" />
     <!-- Font Awesome icons (free version)-->
     <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
     <!-- Google fonts-->
@@ -28,43 +28,10 @@
     <link rel="stylesheet" href="backend/vendor/datatables/dataTables.bs4-custom.css" />
     <link href="backend/vendor/datatables/buttons.bs.css" rel="stylesheet" />
 
-
-
-
-    <!-- Messenger Plugin de chat Code -->
-    <div id="fb-root"></div>
-
-    <!-- Your Plugin de chat code -->
-    <div id="fb-customer-chat" class="fb-customerchat">
-    </div>
-
-    <script>
-      var chatbox = document.getElementById('fb-customer-chat');
-      chatbox.setAttribute("page_id", "100180828258427");
-      chatbox.setAttribute("attribution", "biz_inbox");
-    </script>
-
-    <!-- Your SDK code -->
-    <script>
-      window.fbAsyncInit = function() {
-        FB.init({
-          xfbml            : true,
-          version          : 'v15.0'
-        });
-      };
-
-      (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js';
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
-    </script>
 </head>
 
 <body id="page-top">
-    <div class="paadre">
+    <div class="padre">
         <div class="hijo">
             <div class="fila">
                 <div class="columna12">
@@ -96,7 +63,7 @@
             </div>
         </div>
     </div>    
-    <div class="paadre">
+    <div class="padre">
         <div class="hijo">
             <div class="fila">
                 <div class="columna12">
@@ -108,45 +75,41 @@
         </div>
     </div>
 
-
     <!-- Bootstrap core JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="BackWeb/js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+
+        <!-- Required jQuery first, then Bootstrap Bundle JS -->
+        <script src="backend/js/jquery.min.js"></script>
+        <script src="backend/js/bootstrap.bundle.min.js"></script>
+        <script src="backend/js/moment.js"></script>
+
+        <!-- Data Tables -->
+        <script src="backend/vendor/datatables/dataTables.min.js"></script>
+        <script src="backend/vendor/datatables/dataTables.bootstrap.min.js"></script>
+
+
+        <!-- Custom Data tables -->
+        <script src="backend/vendor/datatables/custom/custom-datatables.js"></script>
+        <script src="backend/vendor/datatables/custom/fixedHeader.js"></script>
+
+
+
+        <!-- Main JS -->
+        <script src="backend/js/main.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+
+        <!-- Slimscroll JS -->
+        <script src="backend/vendor/slimscroll/slimscroll.min.js"></script>
+        <script src="backend/vendor/slimscroll/custom-scrollbar.js"></script>
     <!-- Core theme JS-->
-    <script src="BackWeb/js/scripts.js"></script>
-    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-    <!-- * *                               SB Forms JS                               * *-->
-    <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-
-    <!-- Required jQuery first, then Bootstrap Bundle JS -->
-    <script src="backend/js/jquery.min.js"></script>
-    <script src="backend/js/bootstrap.bundle.min.js"></script>
-    <script src="backend/js/moment.js"></script>
-
-    <!-- Data Tables -->
-    <script src="backend/vendor/datatables/dataTables.min.js"></script>
-    <script src="backend/vendor/datatables/dataTables.bootstrap.min.js"></script>
-
-
-    <!-- Custom Data tables -->
-    <script src="backend/vendor/datatables/custom/custom-datatables.js"></script>
-    <script src="backend/vendor/datatables/custom/fixedHeader.js"></script>
-
-
-
-    <!-- Main JS -->
-    <script src="backend/js/main.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
-
-    <!-- Slimscroll JS -->
-    <script src="backend/vendor/slimscroll/slimscroll.min.js"></script>
-    <script src="backend/vendor/slimscroll/custom-scrollbar.js"></script>
-
-
-
-
-
     <!-- FORMULARIO INDEX CONTACTO -->
     <script>
 
@@ -183,7 +146,7 @@
                     if(!e.target.id.value) {
                         //Create POST
                         ajax({
-                            url: "https://leadapi.institutok29.com/prospecto/agregar.php",
+                            url: "https://mexiclientes.engranetmx.com/prospecto/agregar.php",
                             method: "POST",
                             success: (res) => location.reload(),
                             error: () => $form.insertAdjacentHTML("aftered", `<p><b>${err}</b></p>`),

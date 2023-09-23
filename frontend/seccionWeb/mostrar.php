@@ -123,9 +123,10 @@
 									<div class="account-settings">
 										<div class="user-profile">
 											<div class="user-avatar">
-												<img src="../../backend/img/room.svg" alt="Room" />
+												<img src="../../assents/calendario.png" alt="Room" />
 											</div>
 											<h5 class="user-name">
+												Folio cita:
 												<?php echo $d->numiha; ?>
 											</h5>
 											<h6 class="user-email">
@@ -134,10 +135,13 @@
 										</div>
 										<div class="list-group">
 											<a href="#" class="list-group-item">
-												<?php echo $d->nompis; ?>
+												<p>Asesoramiento con nuestro equipo especialista.</p>
+												<?php //echo $d->nompis; ?>
 											</a>
 											<a href="#" class="list-group-item">
-												<?php echo $d->nomhc; ?>
+												<p>Vía: Telefono & Whatssapp
+												</p>
+												<?php //echo $d->nomhc; ?>
 											</a>
 										</div>
 									</div>
@@ -201,19 +205,21 @@
 											</div>
 											<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
 												<div class="form-group">
-													<label for="addRess">Fecha entrada</label>
-													<input type="text" class="form-control" name="rxent" value="
+													<label for="addRess" hidden>Fecha entrada</label>
+													<input type="text" hidden class="form-control" name="rxent" value="
 																<?php $fechaActual = date('Y-m-d');
 																echo $fechaActual;
 																?>">
 												</div>
 												<div class="form-group">
-													<label for="ciTy">Fecha salida</label>
-													<input type="date" class="form-control" required name="rxsal">
+													<label for="ciTy" hidden>Fecha salida</label>
+													<input type="date" hidden value="<?php $fechaFin = date('Y-m-d');
+																echo $fechaFin;
+																?>" class="form-control" required name="rxsal">
 												</div>
 												<div class="form-group">
-													<label for="sTate">Precio</label>
-													<input type="text" class="form-control" name="precio" value="<?php echo $d->precha; ?>" readonly>
+													<label for="sTate" hidden>Precio</label>
+													<input type="text" hidden class="form-control" name="precio" value="<?php echo $d->precha; ?>" readonly>
 												</div>
 												<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
 													<div class="form-group">
@@ -226,7 +232,7 @@
 											<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
 												<div class="text-right">
 													<div class="text-right">
-														<button type="submit" name="md_insert" class="btn btn-secondary">Reservar ahora</button>
+														<button type="submit" name="md_insert" class="btn btn-secondary">Agendar ahora</button>
 													</div>
 												</div>
 											</div>

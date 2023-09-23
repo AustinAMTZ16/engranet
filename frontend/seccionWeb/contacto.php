@@ -1,3 +1,54 @@
+<!-- Team-->
+<section class="page-section bg-light" id="team">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">¿Tienes dudas o quieres un asesoramiento?</h2>           
+        </div>
+        <!-- <div class="row">
+            <div class="col-lg-6">
+                <div class="team-member">
+                    <img class="mx-auto rounded-circle" src="./assents/aldahir.png" alt="..." />
+                    <h4>Aldahir Martinez</h4>
+                    <span>Cofundador & director ejecutivo</span>
+                    <p class="text-muted">El liderazgo visionario de Aldahir impulsa el éxito de Engranet al brindar estrategias de marketing digital efectivas y accesibles a las pequeñas empresas.Es un gurú del marketing.</p>
+
+                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Twitter Profile"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Facebook Profile"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="team-member">
+                    <img class="mx-auto rounded-circle" src="./assents/erick.png" alt="..." />
+                    <h4>Erick Marcia</h4>
+                    <span>Desarrolador FullStack</span>
+                    <p class="text-muted">Un colaborador excepcional que, con su experiencia como programador de area y su compromiso con el éxito empresarial, contribuye significativamente al crecimiento y la prosperidad de las pequeñas empresas y las empresas nacionales, como Soriana, en México.</p>
+
+                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen Twitter Profile"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen Facebook Profile"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div> -->
+        <div class="row">
+            <div class="col-lg-6 mx-auto text-center">
+                <p class="large text-muted">No dude en llamarnos o enviarnos un correo electrónico,
+                o utilice nuestro formulario de contacto para ponerse en contacto con nosotros
+                ¡Con gusto colaboramos en el crecimiento de tu proyecto!</p>
+                <h4>Llámanos:</h4>
+                <span>+52 221 214 5723</span>
+                <p class="text-muted">Encuentra el estudio <br>
+                Tenemos presencia en Monterrey, Puebla, Tlaxcala..</p>
+            </div>
+            <div class="col-lg-6 mx-auto text-center">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15092.112252079361!2d-98.21314100000001!3d18.974368!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfbf37faa0076d%3A0xc2c6fefcb84ad40!2sdigiceo!5e0!3m2!1ses-419!2smx!4v1695480406265!5m2!1ses-419!2smx" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+                
+
+        </div>
+    </div>
+</section>
+
 <!-- Contact-->
 <section class="page-section" id="contact">
     <div class="container">
