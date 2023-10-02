@@ -1,4 +1,5 @@
 <!-- Navigation-->
+
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark" id="mainNav">
     <div class="container">
         <a class="navbar-brand" href="index.php?view=home"><img src="./assents/logo.jpg" alt="..." /></a>
