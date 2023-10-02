@@ -36,6 +36,7 @@
                 o utilice nuestro formulario de contacto para ponerse en contacto con nosotros
                 ¡Con gusto colaboramos en el crecimiento de tu proyecto!</p>
                 <h4>Llámanos:</h4>
+                <span>+52 818 078 9607</span>
                 <span>+52 221 214 5723</span>
                 <p class="text-muted">Encuentra el estudio <br>
                 Tenemos presencia en Monterrey, Puebla, Tlaxcala..</p>
