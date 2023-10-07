@@ -100,6 +100,30 @@
     
     <a href="https://wa.me/522212145723?text=Hola engranet" target="_blank" class="boton-flotante"><i class="fab fa-whatsapp" style="font-size:36px"></i></a>
 
+    <style>
+        /* Estilos del botón flotante */
+.boton-flotante {
+    display: inline-block;
+    background-color: #229655;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 100%;
+    text-align: center;
+    font-size: 18px;
+    position: fixed;
+    bottom: 20px; /* Ajusta la distancia desde la parte inferior */
+    left: 20px; /* Ajusta la distancia desde la derecha */
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Cambiar el color del botón al pasar el ratón sobre él */
+.boton-flotante:hover {
+    background-color: #0056b3;
+}
+    </style>
+
     <!-- Bootstrap core JS-->
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
