@@ -1,23 +1,3 @@
-<!-- Loading starts -->
-<div id="loading-wrapper">
-	<div class="spinner-border" role="status">
-		<span class="sr-only">Loading...</span>
-	</div>
-</div>
-<!-- Loading ends -->
-
-
-
-<!-- Page header start -->
-<div class="page-header">
-	<ol class="breadcrumb">
-		<li class="breadcrumb-item">Reservacion</li>
-		<li class="breadcrumb-item">Habitaciones</li>
-		<li class="breadcrumb-item active">Reservar</li>
-	</ol>
-</div>
-<!-- Page header end -->
-
 <!-- Main container start -->
 <section class="page-section bg-light" id="team">
     <div class="container">
@@ -186,15 +166,7 @@
 </section>
 <!-- Main container end -->
 
-<div class="padre">
-        <div class="hijo">
-            <div class="fila">
-                <div class="columna12">
-                    <?php
-                    // require('./frontend/seccionWeb/restaurante.php');
-                    require('./frontend/seccionWeb/contacto.php');
-                    ?>
-                </div>
-            </div>
-        </div>
-</div>
+<?php
+	// require('./frontend/seccionWeb/restaurante.php');
+	require('./frontend/seccionWeb/contacto.php');
+?>

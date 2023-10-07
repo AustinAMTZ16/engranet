@@ -1,4 +1,5 @@
 <!-- Navigation-->
+
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark" id="mainNav">
     <div class="container">
         <a class="navbar-brand" href="index.php?view=home"><img src="./assents/logo.jpg" alt="..." /></a>
@@ -13,9 +14,9 @@
                 <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Servicios
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="index.php?view=blog">Paginas web</a></li>
-                        <li><a class="dropdown-item" href="index.php?view=blog">Formularios web</a></li>
-                        <li><a class="dropdown-item" href="index.php?view=blog">ChatBoot WhatssApp</a></li>
+                        <li><a class="dropdown-item" href="index.php?view=servicios">Paginas web</a></li>
+                        <li><a class="dropdown-item" href="index.php?view=servicios">Formularios web</a></li>
+                        <li><a class="dropdown-item" href="index.php?view=servicios">ChatBoot WhatssApp</a></li>
                         
                         <li>
                             <hr class="dropdown-divider">

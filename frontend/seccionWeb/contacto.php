@@ -1,8 +1,8 @@
 <!-- Team-->
-<section class="page-section bg-light" id="team">
+<section class="page-section" id="team">
     <div class="container">
         <div class="text-center">
-            <h2 class="section-heading text-uppercase">¿Tienes dudas o quieres un asesoramiento?</h2>           
+            <h3 class="section-heading text-uppercase">¿Tienes dudas o quieres  un asesoramiento?</h3>           
         </div>
         <!-- <div class="row">
             <div class="col-lg-6">
@@ -36,13 +36,12 @@
                 o utilice nuestro formulario de contacto para ponerse en contacto con nosotros
                 ¡Con gusto colaboramos en el crecimiento de tu proyecto!</p>
                 <h4>Llámanos:</h4>
-                <span>+52 818 078 9607</span>
                 <span>+52 221 214 5723</span>
                 <p class="text-muted">Encuentra el estudio <br>
                 Tenemos presencia en Monterrey, Puebla, Tlaxcala..</p>
             </div>
             <div class="col-lg-6 mx-auto text-center">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15092.112252079361!2d-98.21314100000001!3d18.974368!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfbf37faa0076d%3A0xc2c6fefcb84ad40!2sdigiceo!5e0!3m2!1ses-419!2smx!4v1695480406265!5m2!1ses-419!2smx" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15092.112252079361!2d-98.21314100000001!3d18.974368!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfbf37faa0076d%3A0xc2c6fefcb84ad40!2sdigiceo!5e0!3m2!1ses-419!2smx!4v1695480406265!5m2!1ses-419!2smx" width="70%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
                 
 

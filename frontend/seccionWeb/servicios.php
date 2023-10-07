@@ -27,7 +27,7 @@
                                             2,000 pesos mexicanos
                                         </li>
                                     </ul>
-                                    <a href="https://wa.me/522212145723?text=Hola engranet" target="_blank"><button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                    <a href="https://wa.me/522212145723?text=Hola engranet" target="_blank"><button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button" style="background-color: #229655;">
                                         <i class="fas fa-check me-1"></i>
                                         Contactar WhatsApp
                                     </button></a>
@@ -52,7 +52,7 @@
                                             4,000 pesos mexicanos
                                         </li>
                                     </ul>
-                                    <a href="https://wa.me/522212145723?text=Hola engranet" target="_blank"><button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                    <a href="https://wa.me/522212145723?text=Hola engranet" target="_blank"><button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button" style="background-color: #229655;">
                                         <i class="fas fa-check me-1"></i>
                                         Contactar WhatsApp
                                     </button></a>
@@ -78,7 +78,7 @@
                                             6,000 pesos mexicanos
                                         </li>
                                     </ul>
-                                    <a href="https://wa.me/522212145723?text=Hola engranet" target="_blank"><button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                    <a href="https://wa.me/522212145723?text=Hola engranet" target="_blank"><button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button" style="background-color: #229655;">
                                         <i class="fas fa-check me-1"></i>
                                         Contactar WhatsApp
                                     </button></a>
@@ -100,7 +100,7 @@
                                             Servicios de diseño gráfico adicionales
                                         </li>
                                     </ul>
-                                    <a href="https://wa.me/522212145723?text=Hola engranet" target="_blank"><button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                    <a href="https://wa.me/522212145723?text=Hola engranet" target="_blank"><button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button" style="background-color: #229655;">
                                         <i class="fas fa-check me-1"></i>
                                         Contactar WhatsApp
                                     </button></a>
