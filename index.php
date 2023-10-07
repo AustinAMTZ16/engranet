@@ -32,25 +32,25 @@
 
 <body id="page-top">
     <?php
-    require('./frontend/seccionWeb/header.php');
+        require('./frontend/seccionWeb/header.php');
     ?>
 
     <?php
-    // mostrar.php
-    if (isset($_GET["view"]) && $_GET["view"] != "") {
-        $url = "frontend/seccionWeb/" . $_GET["view"] . ".php";
-        if (file_exists($url)) {
-            include $url;
+        // mostrar.php
+        if (isset($_GET["view"]) && $_GET["view"] != "") {
+            $url = "frontend/seccionWeb/" . $_GET["view"] . ".php";
+            if (file_exists($url)) {
+                include $url;
+            } else {
+                echo "<h1>404 PAGINA NO ENCONTRADA</h1>";
+            }
         } else {
-            echo "<h1>404 PAGINA NO ENCONTRADA</h1>";
+            include "./frontend/seccionWeb/home.php";
         }
-    } else {
-        include "./frontend/seccionWeb/home.php";
-    }
     ?>
 
     <?php
-    require('./frontend/seccionWeb/fotter.php');
+        require('./frontend/seccionWeb/fotter.php');
     ?>
 
     <!-- Bootstrap core JS-->
@@ -143,7 +143,8 @@
                             giroDominio: e.target.giroDominio.value,
                             categoriaProspecto: e.target.categoriaProspecto.value,
                             estadoSistema: e.target.estadoSistema.value,
-                            conversacion: e.target.conversacion.value
+                            conversacion: e.target.conversacion.value,
+                            correoCliente:'aldahir.dar@gmail.com'
                         }
 
                     });

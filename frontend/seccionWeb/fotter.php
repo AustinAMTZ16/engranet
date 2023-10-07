@@ -10,7 +10,7 @@
             <div class="col-lg-4 text-lg-end">
                 <a class="link-dark text-decoration-none me-3" href="#">Política de privacidad
                 </a>
-                <a class="link-dark text-decoration-none" href="sistema.php">Sistema Hotel
+                <a class="link-dark text-decoration-none" href="https://mexiclientes.engranetmx.com/" target="_blank">Sistema
                 </a>
             </div>
         </div>

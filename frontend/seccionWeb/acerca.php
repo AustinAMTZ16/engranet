@@ -78,15 +78,7 @@
     </div>
 </section>
 
-<div class="padre">
-        <div class="hijo">
-            <div class="fila">
-                <div class="columna12">
-                    <?php
-                    // require('./frontend/seccionWeb/restaurante.php');
-                    require('./frontend/seccionWeb/contacto.php');
-                    ?>
-                </div>
-            </div>
-        </div>
-</div>
+<?php
+// require('./frontend/seccionWeb/restaurante.php');
+require('./frontend/seccionWeb/contacto.php');
+?>
