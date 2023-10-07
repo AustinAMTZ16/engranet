@@ -162,50 +162,14 @@
 
     <!-- FORMULARIO INDEX CONTACTO -->
     <script>
-        const d = document,
-            $form = d.querySelector(".crud-form");
 
-        const ajax = (options) => {
-            let {
-                url,
-                method,
-                success,
-                error,
-                data
-            } = options;
-            let xhr = new XMLHttpRequest();
 
-            xhr.addEventListener("readystatechange", e => {
-                if (xhr.readyState !== 4) return;
 
-                if (xhr.status >= 200 && xhr.status < 300) {
-                    let json = JSON.parse(xhr.responseText);
-                    success(json);
+        document.getElementById(".crud-form").addEventListener("submit", function(event) {
+        event.preventDefault(); // Evita que el formulario se envíe de forma tradicional
 
-                } else {
-                    let message = xhr.statusText || "Ocurrio un error";
-                    error(`Error ${xhr.status}: ${message}`);
-                }
-            });
-
-            xhr.open(method || "POST", url);
-
-            xhr.setRequestHeader("Content-type", "application/json; charset=utf-8");
-            xhr.send(JSON.stringify(data));
-
-        }
-
-        d.addEventListener("submit", e => {
-            if (e.target === $form) {
-                e.preventDefault();
-                if (!e.target.id.value) {
-                    //Create POST
-                    ajax({
-                        url: "https://mexiclientes.engranetmx.com/models/prospecto/AgregarProspecto.php",
-                        method: "POST",
-                        success: (res) => location.reload(),
-                        error: () => $form.insertAdjacentHTML("aftered", `<p><b>${err}</b></p>`),
-                        data: {
+        // Obtén los datos del formulario
+        const formData = {
                             // nombre: e.target.nombre.value,
                             // apellidoPaterno : "A",
                             // apellidoMaterno : "A",
@@ -241,14 +205,21 @@
                             urlAgedarCita : "https://engranetmx.com/index.php?view=recepcion"
                         }
 
-                    });
-                } else {
-                    //Update PUT
-                }
-            }
+        // Realiza una solicitud POST a la API
+        fetch("https://mexiclientes.engranetmx.com/models/prospecto/AgregarProspecto.php", {
+            method: "POST",
+            body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                // Procesa la respuesta de la API, por ejemplo, muestra un mensaje de éxito
+                console.log(data);
+            })
+            .catch(error => {
+                // Maneja los errores de la solicitud
+                console.error(error);
+            });
         });
-
-
 
     </script>
 
