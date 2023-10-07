@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SolMTY</title>
+    <title>Engranet</title>
     <!-- <link rel="stylesheet" href="./backend/css/orden.css"> -->
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="./assents/logo.jpg" />
@@ -52,6 +52,8 @@
     <?php
         require('./frontend/seccionWeb/fotter.php');
     ?>
+    
+    <a href="https://wa.me/522212145723?text=Hola engranet" target="_blank" class="boton-flotante"><i class="fab fa-whatsapp" style="font-size:36px"></i></a>
 
     <!-- Bootstrap core JS-->
     <!-- Bootstrap core JS-->
@@ -88,6 +90,7 @@
     <script src="backend/vendor/slimscroll/slimscroll.min.js"></script>
     <script src="backend/vendor/slimscroll/custom-scrollbar.js"></script>
     <!-- Core theme JS-->
+
     <!-- FORMULARIO INDEX CONTACTO -->
     <script>
         const d = document,

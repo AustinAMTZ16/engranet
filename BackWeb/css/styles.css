@@ -11777,3 +11777,25 @@ section#contact form#contactForm :-ms-input-placeholder {
   font-size: 0.9rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
+
+/* Estilos del botón flotante */
+.boton-flotante {
+    display: inline-block;
+    background-color: #229655;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 100%;
+    text-align: center;
+    font-size: 18px;
+    position: fixed;
+    bottom: 20px; /* Ajusta la distancia desde la parte inferior */
+    left: 20px; /* Ajusta la distancia desde la derecha */
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Cambiar el color del botón al pasar el ratón sobre él */
+.boton-flotante:hover {
+    background-color: #0056b3;
+}
