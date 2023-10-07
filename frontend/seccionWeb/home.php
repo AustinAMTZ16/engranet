@@ -1,7 +1,6 @@
 <!-- Masthead-->
 <header class="masthead">
     <div class="container">
-        <br><br><br><br><br><br><br><br><br><br>
         <div style="font-size: 28px;" class="masthead-heading text-uppercase">Soluciones innovadoras de marketing digital para pequeñas empresas.</div>
         <div class="masthead-subheading" style="font-size: 20px;">Bienvenido a engranet, el club de marketing líder en México. Brindamos soluciones de marketing digital efectivas y asequibles para ayudar a las pequeñas empresas a prosperar en el panorama digital actual.</div>
         <a class="btn btn-xl text-uppercase" style="background: #ffa552; color: aliceblue;" href="index.php?view=servicios">Ver todos los servicios</a>
