@@ -162,65 +162,73 @@
 
     <!-- FORMULARIO INDEX CONTACTO -->
     <script>
+        const d = document,
+            $form = d.querySelector(".crud-form");
 
+        const ajax = (options) => {
+            let {
+                url,
+                method,
+                success,
+                error,
+                data
+            } = options;
+            let xhr = new XMLHttpRequest();
 
+            xhr.addEventListener("readystatechange", e => {
+                if (xhr.readyState !== 4) return;
 
-        document.getElementById(".crud-form").addEventListener("submit", function(event) {
-        event.preventDefault(); // Evita que el formulario se envíe de forma tradicional
+                if (xhr.status >= 200 && xhr.status < 300) {
+                    let json = JSON.parse(xhr.responseText);
+                    success(json);
 
-        // Obtén los datos del formulario
-        const formData = {
-                            // nombre: e.target.nombre.value,
-                            // apellidoPaterno : "A",
-                            // apellidoMaterno : "A",
-                            // telefono: e.target.telefono.value,
-                            // correo: e.target.correo.value,
-                            // mensaje: e.target.mensaje.value,
-                            // asunto: e.target.asunto.value,
-                            // dominioOrigen: e.target.dominioOrigen.value,
-                            // giroDominio: e.target.giroDominio.value,
-                            // categoriaProspecto: e.target.categoriaProspecto.value,
-                            // estadoSistema: e.target.estadoSistema.value,
-                            // conversacion: e.target.conversacion.value,
-                            // correoCliente:'aldahir.dar@gmail.com',
-                            // urlWhatsapp : "https://api.whatsapp.com/send/?phone=522212145723&text=Hola+engranet&type=phone_number&app_absent=0",
-                            // urlAgedarCita : "https://engranetmx.com/index.php?view=recepcion"
+                } else {
+                    let message = xhr.statusText || "Ocurrio un error";
+                    error(`Error ${xhr.status}: ${message}`);
+                }
+            });
 
-                            nombre : "Aldahir ",
+            xhr.open(method || "POST", url);
+
+            xhr.setRequestHeader("Content-type", "application/json; charset=utf-8");
+            xhr.send(JSON.stringify(data));
+
+        }
+
+        d.addEventListener("submit", e => {
+            if (e.target === $form) {
+                e.preventDefault();
+                if (!e.target.id.value) {
+                    //Create POST
+                    ajax({
+                        url: "https://mexiclientes.engranetmx.com/models/prospecto/AgregarProspecto.php",
+                        method: "POST",
+                        success: (res) => location.reload(),
+                        error: () => $form.insertAdjacentHTML("aftered", `<p><b>${err}</b></p>`),
+                        data: {
+                            nombre: e.target.nombre.value,
                             apellidoPaterno : "A",
                             apellidoMaterno : "A",
-                            telefono : "22",
-                            correo : "austintv52@gmail.com",
-                            asunto : "A",
-                            mensaje : "A",
-                            dominioOrigen : "A",
-                            giroDominio : "A",
-                            categoriaProspecto : "A",
-                            estadoSistema : "Activo",
-                            conversacion : "A",
-                            fechaNacimiento : "03-11-1990",
-                            lugarNacimiento : "03-11-1990",
-                            correoCliente : "power_gugus52@hotmail.com" ,
+                            telefono: e.target.telefono.value,
+                            correo: e.target.correo.value,
+                            mensaje: e.target.mensaje.value,
+                            asunto: e.target.asunto.value,
+                            dominioOrigen: e.target.dominioOrigen.value,
+                            giroDominio: e.target.giroDominio.value,
+                            categoriaProspecto: e.target.categoriaProspecto.value,
+                            estadoSistema: e.target.estadoSistema.value,
+                            conversacion: e.target.conversacion.value,
+                            correoCliente:'aldahir.dar@gmail.com',
                             urlWhatsapp : "https://api.whatsapp.com/send/?phone=522212145723&text=Hola+engranet&type=phone_number&app_absent=0",
                             urlAgedarCita : "https://engranetmx.com/index.php?view=recepcion"
                         }
 
-        // Realiza una solicitud POST a la API
-        fetch("https://mexiclientes.engranetmx.com/models/prospecto/AgregarProspecto.php", {
-            method: "POST",
-            body: formData
-            })
-            .then(response => response.json())
-            .then(data => {
-                // Procesa la respuesta de la API, por ejemplo, muestra un mensaje de éxito
-                console.log(data);
-            })
-            .catch(error => {
-                // Maneja los errores de la solicitud
-                console.error(error);
-            });
+                    });
+                } else {
+                    //Update PUT
+                }
+            }
         });
-
     </script>
 
     <!-- FORMULARIO CITA -->
@@ -251,7 +259,7 @@
                 }
             });
 
-            xhr_cita.open(method || "GET", url);
+            xhr_cita.open(method || "POST", url);
 
             xhr_cita.setRequestHeader("Content-type", "application/json; charset=utf-8");
             xhr_cita.send(JSON.stringify(data));
