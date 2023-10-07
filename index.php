@@ -188,7 +188,7 @@
                 }
             });
 
-            xhr.open(method || "GET", url);
+            xhr.open(method || "POST", url);
 
             xhr.setRequestHeader("Content-type", "application/json; charset=utf-8");
             xhr.send(JSON.stringify(data));
@@ -206,19 +206,37 @@
                         success: (res) => location.reload(),
                         error: () => $form.insertAdjacentHTML("aftered", `<p><b>${err}</b></p>`),
                         data: {
-                            nombre: e.target.nombre.value,
+                            // nombre: e.target.nombre.value,
+                            // apellidoPaterno : "A",
+                            // apellidoMaterno : "A",
+                            // telefono: e.target.telefono.value,
+                            // correo: e.target.correo.value,
+                            // mensaje: e.target.mensaje.value,
+                            // asunto: e.target.asunto.value,
+                            // dominioOrigen: e.target.dominioOrigen.value,
+                            // giroDominio: e.target.giroDominio.value,
+                            // categoriaProspecto: e.target.categoriaProspecto.value,
+                            // estadoSistema: e.target.estadoSistema.value,
+                            // conversacion: e.target.conversacion.value,
+                            // correoCliente:'aldahir.dar@gmail.com',
+                            // urlWhatsapp : "https://api.whatsapp.com/send/?phone=522212145723&text=Hola+engranet&type=phone_number&app_absent=0",
+                            // urlAgedarCita : "https://engranetmx.com/index.php?view=recepcion"
+
+                            nombre : "Aldahir ",
                             apellidoPaterno : "A",
                             apellidoMaterno : "A",
-                            telefono: e.target.telefono.value,
-                            correo: e.target.correo.value,
-                            mensaje: e.target.mensaje.value,
-                            asunto: e.target.asunto.value,
-                            dominioOrigen: e.target.dominioOrigen.value,
-                            giroDominio: e.target.giroDominio.value,
-                            categoriaProspecto: e.target.categoriaProspecto.value,
-                            estadoSistema: e.target.estadoSistema.value,
-                            conversacion: e.target.conversacion.value,
-                            correoCliente:'aldahir.dar@gmail.com',
+                            telefono : "22",
+                            correo : "austintv52@gmail.com",
+                            asunto : "A",
+                            mensaje : "A",
+                            dominioOrigen : "A",
+                            giroDominio : "A",
+                            categoriaProspecto : "A",
+                            estadoSistema : "Activo",
+                            conversacion : "A",
+                            fechaNacimiento : "03-11-1990",
+                            lugarNacimiento : "03-11-1990",
+                            correoCliente : "power_gugus52@hotmail.com" ,
                             urlWhatsapp : "https://api.whatsapp.com/send/?phone=522212145723&text=Hola+engranet&type=phone_number&app_absent=0",
                             urlAgedarCita : "https://engranetmx.com/index.php?view=recepcion"
                         }
@@ -229,6 +247,9 @@
                 }
             }
         });
+
+
+
     </script>
 
     <!-- FORMULARIO CITA -->
