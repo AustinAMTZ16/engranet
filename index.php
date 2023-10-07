@@ -207,6 +207,8 @@
                         error: () => $form.insertAdjacentHTML("aftered", `<p><b>${err}</b></p>`),
                         data: {
                             nombre: e.target.nombre.value,
+                            apellidoPaterno : "A",
+                            apellidoMaterno : "A",
                             telefono: e.target.telefono.value,
                             correo: e.target.correo.value,
                             mensaje: e.target.mensaje.value,
@@ -279,6 +281,8 @@
                         error: () => $form_cita.insertAdjacentHTML("aftered", `<p><b>${err}</b></p>`),
                         data: {
                             nombre: e.target.nombre.value,
+                            apellidoPaterno : "A",
+                            apellidoMaterno : "A",
                             telefono: e.target.telefono.value,
                             correo: e.target.correo.value,
                             asunto: e.target.asunto.value,
