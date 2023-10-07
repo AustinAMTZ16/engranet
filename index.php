@@ -201,7 +201,7 @@
                 if (!e.target.id.value) {
                     //Create POST
                     ajax({
-                        url: "https://mexiclientes.engranetmx.com/prospecto/agregar.php",
+                        url: "https://mexiclientes.engranetmx.com/models/prospecto/AgregarProspecto.php",
                         method: "POST",
                         success: (res) => location.reload(),
                         error: () => $form.insertAdjacentHTML("aftered", `<p><b>${err}</b></p>`),
@@ -216,7 +216,9 @@
                             categoriaProspecto: e.target.categoriaProspecto.value,
                             estadoSistema: e.target.estadoSistema.value,
                             conversacion: e.target.conversacion.value,
-                            correoCliente:'aldahir.dar@gmail.com'
+                            correoCliente:'aldahir.dar@gmail.com',
+                            urlWhatsapp : "https://api.whatsapp.com/send/?phone=522212145723&text=Hola+engranet&type=phone_number&app_absent=0",
+                            urlAgedarCita : "https://engranetmx.com/index.php?view=recepcion"
                         }
 
                     });
@@ -271,7 +273,7 @@
                 if (!e.target.id.value) {
                     //Create POST
                     ajax_cita({
-                        url: "https://leadapi.institutok29.com/prospecto/agregar.php",
+                        url: "https://mexiclientes.engranetmx.com/models/prospecto/AgregarProspecto.php",
                         method: "POST",
                         success: (res) => location.reload(),
                         error: () => $form_cita.insertAdjacentHTML("aftered", `<p><b>${err}</b></p>`),
@@ -289,7 +291,10 @@
                             fecha: e.target.fecha.value,
                             pacas: e.target.pacas.value,
                             ubicacion: e.target.ubicacion.value,
-                            mensaje: e.target.fecha.value + " " + e.target.pacas.value + " " + e.target.ubicacion.value + " " + e.target.mensajes_cita.value
+                            mensaje: e.target.fecha.value + " " + e.target.pacas.value + " " + e.target.ubicacion.value + " " + e.target.mensajes_cita.value,
+                            correoCliente:'aldahir.dar@gmail.com',
+                            urlWhatsapp : "https://api.whatsapp.com/send/?phone=522212145723&text=Hola+engranet&type=phone_number&app_absent=0",
+                            urlAgedarCita : "https://engranetmx.com/index.php?view=recepcion"
                         }
 
                     });
