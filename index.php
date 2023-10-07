@@ -219,8 +219,8 @@
                             estadoSistema: e.target.estadoSistema.value,
                             conversacion: e.target.conversacion.value,
                             correoCliente:'aldahir.dar@gmail.com',
-                            urlWhatsapp : "https://api.whatsapp.com/send/?phone=522212145723&text=Hola+engranet&type=phone_number&app_absent=0",
-                            urlAgedarCita : "https://engranetmx.com/index.php?view=recepcion"
+                            urlWhatsapp : 'https://api.whatsapp.com/send/?phone=522212145723&text=Hola+engranet&type=phone_number&app_absent=0',
+                            urlAgedarCita : 'https://engranetmx.com/index.php?view=recepcion'
                         }
 
                     });
@@ -297,8 +297,8 @@
                             ubicacion: e.target.ubicacion.value,
                             mensaje: e.target.fecha.value + " " + e.target.pacas.value + " " + e.target.ubicacion.value + " " + e.target.mensajes_cita.value,
                             correoCliente:'aldahir.dar@gmail.com',
-                            urlWhatsapp : "https://api.whatsapp.com/send/?phone=522212145723&text=Hola+engranet&type=phone_number&app_absent=0",
-                            urlAgedarCita : "https://engranetmx.com/index.php?view=recepcion"
+                            urlWhatsapp : 'https://api.whatsapp.com/send/?phone=522212145723&text=Hola+engranet&type=phone_number&app_absent=0',
+                            urlAgedarCita : 'https://engranetmx.com/index.php?view=recepcion'
                         }
 
                     });
