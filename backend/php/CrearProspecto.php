@@ -22,7 +22,7 @@
         $correo = $_POST['correo'];
         $asunto = 'Suscripción a Engranet';
         $mensaje = $_POST['mensaje'];
-        $dominioOrigen ='engranetmx.com';
+        $dominioOrigen ='https://'.'engranetmx.com';
         $giroDominio ='Marketing Digital';
         $categoriaProspecto='Soluciones Digitales';
         $estadoSistema ='Activo';
@@ -33,7 +33,6 @@
         $urlWhatsapp ='https://api.whatsapp.com/send/?phone=522212145723&text=Hola+engranet&type=phone_number&app_absent=0';
         $urlAgedarCita='https://engranetmx.com/index.php?view=recepcion';
         $fecha_actual = date("Y-m-d h:i:s");
-
 
         $mailSuscripcion = '
             <table role="presentation" style="width:100%;border-collapse:collapse;border:0;border-spacing:0;background:#ffffff;">
@@ -117,10 +116,6 @@
         $headers = "MIME-Version: 1.0" . "\r\n";
         $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
         $headers .= "From: MexiClientes@engranetmx.com" . "\r\n";
-
-
-
-
 
         $sqlProspecto = "INSERT INTO tb_prospecto (
                         nombre, apellidoPaterno, apellidoMaterno, telefono, correo, asunto, mensaje, dominioOrigen, giroDominio, categoriaProspecto, estadoSistema, fechaNacimiento, lugarNacimiento, origenProspecto
