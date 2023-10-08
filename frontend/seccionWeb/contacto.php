@@ -63,7 +63,7 @@
         <!-- To make this form functional, sign up at-->
         <!-- https://startbootstrap.com/solution/contact-forms-->
         <!-- to get an API token!-->
-        <form class="crud-form" id="contactForm" >
+        <form class=".crud-form" id="contactForm" >
             <div class="row align-items-stretch mb-5">
                 <div class="col-md-6">
                     <div class="form-group">
@@ -132,10 +132,14 @@
             <!---->
             <!-- This is what your users will see when there is-->
             <!-- an error submitting the form-->
-            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error al enviar
-                message!</div></div>
+            <div class="d-none" id="submitErrorMessage">
+                <div class="text-center text-danger mb-3">Error al enviar
+                message!</div>
+            </div>
             <!-- Submit Button-->
-            <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase " id="submitButton" type="submit">Enviar Mensaje</button></div>
+            <div class="text-center">
+                <button class="btn btn-primary btn-xl text-uppercase " id="submitButton" type="submit">Enviar Mensaje</button>
+            </div>
         </form>
     </div>
 </section>

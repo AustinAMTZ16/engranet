@@ -201,12 +201,14 @@
                 if (!e.target.id.value) {
                     //Create POST
                     ajax({
-                        url: "https://mexiclientes.engranetmx.com/models/prospecto/AgregarProspecto.php",
+                        url: "http://127.0.0.1:8080/models/prospecto/AgregarProspecto.php",
                         method: "POST",
                         success: (res) => location.reload(),
                         error: () => $form.insertAdjacentHTML("aftered", `<p><b>${err}</b></p>`),
                         data: {
                             nombre: e.target.nombre.value,
+                            apellidoPaterno : "A",
+                            apellidoMaterno : "A",
                             telefono: e.target.telefono.value,
                             correo: e.target.correo.value,
                             mensaje: e.target.mensaje.value,
@@ -217,26 +219,8 @@
                             estadoSistema: e.target.estadoSistema.value,
                             conversacion: e.target.conversacion.value,
                             correoCliente:'aldahir.dar@gmail.com',
-
-
-
-                            // "nombre" : "Aldahir ",
-                            // "apellidoPaterno" : "A",
-                            // "apellidoMaterno" : "A",
-                            // "telefono" : "22",
-                            // "correo" : "austintv52@gmail.com",
-                            // "asunto" : "A",
-                            // "mensaje" : "A",
-                            // "dominioOrigen" : "A",
-                            // "giroDominio" : "A",
-                            // "categoriaProspecto" : "A",
-                            // "estadoSistema" : "Activo",
-                            // "conversacion" : "A",
-                            // "fechaNacimiento" : "03-11-1990",
-                            // "lugarNacimiento" : "03-11-1990",
-                            // "correoCliente" : "power_gugus52@hotmail.com" ,
-                            // "urlWhatsapp" : "https://api.whatsapp.com/send/?phone=522212145723&text=Hola+engranet&type=phone_number&app_absent=0",
-                            // "urlAgedarCita" : "https://engranetmx.com/index.php?view=recepcion"
+                            urlWhatsapp : 'https://api.whatsapp.com/send/?phone=522212145723&text=Hola+engranet&type=phone_number&app_absent=0',
+                            urlAgedarCita : 'https://engranetmx.com/index.php?view=recepcion'
                         }
 
                     });
