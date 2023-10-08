@@ -11,19 +11,19 @@
             <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
                 <li class="nav-item"><a class="nav-link" href="index.php?view=home">Inicio</a></li>
                 <li class="nav-item"><a class="nav-link" href="index.php?view=acerca">Acerca</a></li>
-                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Servicios
+                <li class="nav-item"><a class="nav-link" href="index.php?view=servicios">Servicios</a></li>
+                <!-- <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Servicios
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="index.php?view=servicios">Paginas web</a></li>
-                        <li><a class="dropdown-item" href="index.php?view=servicios">Formularios web</a></li>
-                        <li><a class="dropdown-item" href="index.php?view=servicios">ChatBoot WhatssApp</a></li>
-                        
+                        <li><a class="dropdown-item" href="#">Paginas web</a></li>
+                        <li><a class="dropdown-item" href="#">Formularios web</a></li>
+                        <li><a class="dropdown-item" href="#">ChatBoot WhatssApp</a></li>
                         <li>
                             <hr class="dropdown-divider">
                         </li>
                         <li><a class="dropdown-item" href="index.php?view=servicios">Todos los servicios</a></li>
                     </ul>
-                    </li>
+                </li> -->
                 <li class="nav-item"><a class="nav-link" href="index.php?view=blog">Blog</a></li>
                 </li>
                 <li class="nav-item"><a class="nav-link" href="index.php?view=recepcion">Contacto</a></li>
