@@ -221,6 +221,26 @@
                             correoCliente:'aldahir.dar@gmail.com',
                             urlWhatsapp : 'https://api.whatsapp.com/send/?phone=522212145723&text=Hola+engranet&type=phone_number&app_absent=0',
                             urlAgedarCita : 'https://engranetmx.com/index.php?view=recepcion'
+
+
+
+                            // "nombre" : "Aldahir ",
+                            // "apellidoPaterno" : "A",
+                            // "apellidoMaterno" : "A",
+                            // "telefono" : "22",
+                            // "correo" : "austintv52@gmail.com",
+                            // "asunto" : "A",
+                            // "mensaje" : "A",
+                            // "dominioOrigen" : "A",
+                            // "giroDominio" : "A",
+                            // "categoriaProspecto" : "A",
+                            // "estadoSistema" : "Activo",
+                            // "conversacion" : "A",
+                            // "fechaNacimiento" : "03-11-1990",
+                            // "lugarNacimiento" : "03-11-1990",
+                            // "correoCliente" : "power_gugus52@hotmail.com" ,
+                            // "urlWhatsapp" : "https://api.whatsapp.com/send/?phone=522212145723&text=Hola+engranet&type=phone_number&app_absent=0",
+                            // "urlAgedarCita" : "https://engranetmx.com/index.php?view=recepcion"
                         }
 
                     });
@@ -308,6 +328,36 @@
             }
         });
     </script>
+
+<script>
+    document.getElementById("miFormulario").addEventListener("submit", function(event) {
+        event.preventDefault(); // Evita que el formulario se envíe de forma tradicional
+
+        // Obtén los datos del formulario
+        const formData = new FormData(event.target);
+
+        // Realiza una solicitud POST a la API
+        fetch("https://mexiclientes.engranetmx.com/models/prospecto/AgregarProspecto.php", {
+            method: "POST",
+            body: formData
+        })
+        .then(response => response.json())
+        .then(data => {
+            // Procesa la respuesta de la API, por ejemplo, muestra un mensaje de éxito
+            console.log(data);
+        })
+        .catch(error => {
+            // Maneja los errores de la solicitud
+            console.error(error);
+        });
+    });
+</script>
+
+
+
+
+
+
 
 </body>
 

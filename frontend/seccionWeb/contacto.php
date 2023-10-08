@@ -63,7 +63,7 @@
         <!-- To make this form functional, sign up at-->
         <!-- https://startbootstrap.com/solution/contact-forms-->
         <!-- to get an API token!-->
-        <form class="crud-form" id="contactForm" >
+        <form  id="miFormulario" action="https://mexiclientes.engranetmx.com/models/prospecto/AgregarProspecto.php" method="post">
             <div class="row align-items-stretch mb-5">
                 <div class="col-md-6">
                     <div class="form-group">
@@ -103,6 +103,16 @@
                     </div>
                     <div class="form-group">
                         <input class="form-control" type="hidden" name="conversacion" value="Registro desde Pagina web">
+                    </div>
+
+                    <div class="form-group">
+                        <input class="form-control" type="hidden" name="correoCliente" value="power_gugus52@hotmail.com">
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" type="hidden" name="urlWhatsapp" value="https://api.whatsapp.com/send/?phone=522212145723&text=Hola+engranet&type=phone_number&app_absent=0">
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" type="hidden" name="urlAgedarCita" value="https://engranetmx.com/index.php?view=recepcion">
                     </div>
                     <!--FIN CAMPOS OCULTOS -->
 
