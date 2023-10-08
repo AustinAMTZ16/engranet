@@ -190,7 +190,7 @@
 
             xhr.open(method || "POST", url);
 
-            xhr.setRequestHeader("Content-type", "application/json; charset=utf-8");
+            xhr.setRequestHeader("Access-Control-Allow-Headers: Content-Type", "Access-Control-Allow-Headers", "Authorizaction", "X-Request-with", "X-API-KEY", "Origin", "Accept", "Access-Control-Request-Method", "Access-Control-Allow-Method: POST", "Content-Type: application/json", "Access-Control-Allow-Origin: *");
             xhr.send(JSON.stringify(data));
 
         }
@@ -328,30 +328,6 @@
             }
         });
     </script>
-
-<script>
-    document.getElementById("miFormulario").addEventListener("submit", function(event) {
-        event.preventDefault(); // Evita que el formulario se envíe de forma tradicional
-
-        // Obtén los datos del formulario
-        const formData = new FormData(event.target);
-
-        // Realiza una solicitud POST a la API
-        fetch("https://mexiclientes.engranetmx.com/models/prospecto/AgregarProspecto.php", {
-            method: "POST",
-            body: formData
-        })
-        .then(response => response.json())
-        .then(data => {
-            // Procesa la respuesta de la API, por ejemplo, muestra un mensaje de éxito
-            console.log(data);
-        })
-        .catch(error => {
-            // Maneja los errores de la solicitud
-            console.error(error);
-        });
-    });
-</script>
 
 
 
