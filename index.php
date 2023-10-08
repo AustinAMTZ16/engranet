@@ -207,8 +207,6 @@
                         error: () => $form.insertAdjacentHTML("aftered", `<p><b>${err}</b></p>`),
                         data: {
                             nombre: e.target.nombre.value,
-                            apellidoPaterno : "A",
-                            apellidoMaterno : "A",
                             telefono: e.target.telefono.value,
                             correo: e.target.correo.value,
                             mensaje: e.target.mensaje.value,
@@ -219,8 +217,6 @@
                             estadoSistema: e.target.estadoSistema.value,
                             conversacion: e.target.conversacion.value,
                             correoCliente:'aldahir.dar@gmail.com',
-                            urlWhatsapp : 'https://api.whatsapp.com/send/?phone=522212145723&text=Hola+engranet&type=phone_number&app_absent=0',
-                            urlAgedarCita : 'https://engranetmx.com/index.php?view=recepcion'
 
 
 
