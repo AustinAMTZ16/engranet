@@ -29,7 +29,7 @@
         $conversacion ='';
         $fechaNacimiento ='03-11-1990';
         $lugarNacimiento ='-';
-        $correoCliente ='power_gugus52@hotmail.com';
+        $correoCliente ='aldahir.dar@gmail.com';
         $urlWhatsapp ='https://api.whatsapp.com/send/?phone=522212145723&text=Hola+engranet&type=phone_number&app_absent=0';
         $urlAgedarCita='https://engranetmx.com/index.php?view=recepcion';
         $fecha_actual = date("Y-m-d h:i:s");
@@ -113,6 +113,59 @@
                 </tr>
             </table>
         ';
+        $mailProveedor = '
+            <table role="presentation" style="width:100%;border-collapse:collapse;border:0;border-spacing:0;background:#ffffff;">
+                <tr>
+                    <td align="center" style="padding:0;">
+                        <table role="presentation" style="width:602px;border-collapse:collapse;border:1px solid #cccccc;border-spacing:0;text-align:left;">
+                            <tr>
+                                <td align="center" style="padding:40px 0 30px 0;">
+                                    <img src="https://engranetmx.com/BackWeb/assets/img/fondo.jpg" alt="" width="90%"  style="height:auto;display:block;" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding:36px 30px 42px 30px;">
+                                    <table role="presentation" style="width:100%;border-collapse:collapse;border:0;border-spacing:0;">
+                                        <tr>
+                                            <td style="padding:0 0 36px 0;color:#153643;">
+                                                <span>Hola ' .$dominioOrigen. '.</span>
+                                                <h1 style="font-size:24px;margin:0 0 5px 0;font-family:Arial,sans-serif;">Tu registro fue exitoso.</h1>
+                                                <span>Te avisamos que una nueva persona se registro en tu sitio web. ' .$nombre. ' </span>
+                                                <h1 style="font-size:24px;margin:0 0 20px 0;font-family:Arial,sans-serif;"></h1>
+                                                <p style="margin:0 0 12px 0;font-size:16px;line-height:24px;font-family:Arial,sans-serif;">
+                                                </p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding:30px;background:#ee4c50;">
+                                    <table role="presentation" style="width:100%;border-collapse:collapse;border:0;border-spacing:0;font-size:9px;font-family:Arial,sans-serif;">
+                                        <tr>
+                                            <td style="padding:0;width:50%;" align="left">
+                                                <p style="margin:0;font-size:14px;line-height:16px;font-family:Arial,sans-serif;color:#ffffff;">
+                                                    &reg; Engranet, Soluciones Digitales 2023<br /><a href="https://www.engranetmx.com" target="_blank" style="color:#ffffff;text-decoration:underline;">engranetmx.com</a>
+                                                </p>
+                                            </td>
+                                            <td style="padding:0;width:50%;" align="right">
+                                                <table role="presentation" style="border-collapse:collapse;border:0;border-spacing:0;">
+                                                    <tr>
+                                                        <td style="padding:0 0 0 10px;width:38px;">
+                                                            <a href="https://www.facebook.com/profile.php?id=100090316568304" target="_blank" style="color:#ffffff;"><img src="https://assets.codepen.io/210284/fb_1.png" alt="Facebook" width="38" style="height:auto;display:block;border:0;" /></a>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        ';
         $headers = "MIME-Version: 1.0" . "\r\n";
         $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
         $headers .= "From: MexiClientes@engranetmx.com" . "\r\n";
@@ -135,7 +188,7 @@
                 ) VALUES('1','$fecha_actual', '$idProstecto')";
                 if ($conn->query($sqlPuntos) === TRUE) {
                     mail($correo, "Gracias por suscribirte", $mailSuscripcion, $headers);
-                    mail($correoCliente, "Nuevo registro desde tu paginas web", $mailSuscripcion, $headers);
+                    mail($correoCliente, "Nuevo registro desde tu paginas web", $mailProveedor, $headers);
                     header("Location: ../../index.php"); // Redireccionar a la página principal después de crear el registro
                     exit();
                 } else {
