@@ -6,7 +6,7 @@
     <title>API POST</title>
 </head>
 <body>
-    <form class="form">
+    <form class="form" method="POST">
         <input name="nombre" type="text" value="Aldahir">
         <input name="apellidoPaterno" type="text" value="Arenas">
         <input name="apellidoMaterno" type="text" value="Martinez">
@@ -70,34 +70,39 @@
             urlAgedarCita: urlAgedarCita
             // Agrega otros campos aquí si es necesario
         };
-        //console.log("D: ",datosFormulario);
-        //console.log("[] = " . JSON.stringify(datosFormulario));
+
         form.addEventListener('submit', event => {
+
             event.preventDefault();
             const prePayload = new FormData(form);
             const payload = Object.fromEntries(prePayload);
-            console.log(payload);
-            //console.log("D: ",datosFormulario);
+            
+            console.log("prePayload: ",prePayload);
+            console.log("payload: ",payload);
 
-            fetch('https://mexiclientes.engranetmx.com/models/prospecto/AgregarProspecto.php',{
+            fetch('https://mexiclientes.engranetmx.com/models/prospecto/AgregarProspecto.php', {
                 headers: {
-                    "Content-Type": "application/json"
-                },//json_decode(file_get_contents("php://input"), true)
+                    'Access-Control-Allow-Origin': '*',
+                    'Content-Type': 'application/json',
+                    'Access-Control-Allow-Method': 'POST, GET, OPTIONS',
+                    'Access-Control-Allow-Headers': 'Content-Type, Access-Control-Allow-Headers, Authorizaction, X-Request-with, X-API-KEY, Origin, Accept, Access-Control-Request-Method',
+                    'Origin': 'https://mexiclientes.engranetmx.com/models/prospecto/AgregarProspecto.php'
+                },
                 method : "POST",
                 body: JSON.stringify(payload)
             })
             .then(response => response.json())
             .then(data => {
                 // Procesa la respuesta de la API
-                console.log(data);
+                console.log("Respuesta 1: ",data);
             })
             .catch(error => {
                 // Maneja los errores de la solicitud
-                console.error(error);
+                console.error("Respuesta 2: ",datosFormulario,error);
             });
-            console.log("C: ",data);
+            console.log("Respuesta 3: ",data);
         })
-        console.log("D: ",datosFormulario);
+        //console.log("D: ",datosFormulario);
         // const datosJSON = JSON.stringify(form);
 
         

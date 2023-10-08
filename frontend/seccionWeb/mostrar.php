@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Hotel Casas de Piedra</title>
+	<title>Engranet</title>
 	<!-- <link rel="stylesheet" href="./backend/css/orden.css"> -->
 	<!-- Favicon-->
 	<link rel="icon" type="image/x-icon" href="../../BackWeb/assets/img/logo.jpeg" />
@@ -28,8 +28,20 @@
 	<link rel="stylesheet" href="../../backend/vendor/datatables/dataTables.bs4-custom.css" />
 	<link href="../../backend/vendor/datatables/buttons.bs.css" rel="stylesheet" />
 
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=AW-11359331584">
+	</script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
 
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
 
+		gtag('config', 'AW-11359331584');
+	</script>
+	<!-- Google tag (gtag.js) -->
 
 	<!-- Messenger Plugin de chat Code -->
 	<div id="fb-root"></div>
@@ -40,7 +52,7 @@
 
 	<script>
 		var chatbox = document.getElementById('fb-customer-chat');
-		chatbox.setAttribute("page_id", "100180828258427");
+		chatbox.setAttribute("page_id", "115144064851488");
 		chatbox.setAttribute("attribution", "biz_inbox");
 	</script>
 
@@ -49,7 +61,7 @@
 		window.fbAsyncInit = function() {
 			FB.init({
 				xfbml: true,
-				version: 'v15.0'
+				version: 'v18.0'
 			});
 		};
 
@@ -62,15 +74,14 @@
 			fjs.parentNode.insertBefore(js, fjs);
 		}(document, 'script', 'facebook-jssdk'));
 	</script>
+	<!-- Messenger Plugin de chat Code -->
 </head>
 
 <body>
-
-
 	<!-- Navigation-->
 	<nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark" id="mainNav">
 		<div class="container">
-			<a class="navbar-brand" href="../../index.php"><img src="../../BackWeb/assets/img/logo.jpeg" alt="..." /></a>
+			<a class="navbar-brand" href="http://engranetmx.com/"><img src="../../assents/logo.jpg" alt="..." /></a>
 			<!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
 				Menu
 				<i class="fas fa-bars ms-1"></i>
@@ -82,20 +93,6 @@
 			</div>
 		</div>
 	</nav>
-
-	<!-- Page header start -->
-	<div class="page-header">
-		<ol class="breadcrumb">
-			<li class="breadcrumb-item">Reservacion</li>
-			<li class="breadcrumb-item">Habitaciones</li>
-			<li class="breadcrumb-item active">Reservar</li>
-		</ol>
-	</div>
-	<!-- Page header end -->
-
-
-
-
 
 	<!-- Main container start -->
 	<section section class="page-section bg-light" id="team">
@@ -117,6 +114,7 @@
 				?>
 				<?php if (count($data) > 0) : ?>
 					<?php foreach ($data as $d) : ?>
+
 						<div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
 							<div class="card h-100">
 								<div class="card-body">
@@ -136,21 +134,21 @@
 										<div class="list-group">
 											<a href="#" class="list-group-item">
 												<p>Asesoramiento con nuestro equipo especialista.</p>
-												<?php //echo $d->nompis; ?>
+												<?php //echo $d->nompis; 
+												?>
 											</a>
 											<a href="#" class="list-group-item">
 												<p>Vía: Telefono & Whatssapp
 												</p>
-												<?php //echo $d->nomhc; ?>
+												<?php //echo $d->nomhc; 
+												?>
 											</a>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-
-
-
+						
 						<div class="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-12">
 							<div class="card h-100">
 								<div class="card-header">
@@ -214,8 +212,8 @@
 												<div class="form-group">
 													<label for="ciTy" hidden>Fecha salida</label>
 													<input type="date" hidden value="<?php $fechaFin = date('Y-m-d');
-																echo $fechaFin;
-																?>" class="form-control" required name="rxsal">
+																						echo $fechaFin;
+																						?>" class="form-control" required name="rxsal">
 												</div>
 												<div class="form-group">
 													<label for="sTate" hidden>Precio</label>
@@ -253,7 +251,7 @@
 
 
 
-	<div class="modal fade" id="addNewDocument" tabindex="-1" role="dialog" aria-labelledby="addNewDocumentLabel" aria-hidden="true">
+	<!-- <div class="modal fade" id="addNewDocument" tabindex="-1" role="dialog" aria-labelledby="addNewDocumentLabel" aria-hidden="true">
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
 				<div class="modal-header">
@@ -307,28 +305,11 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> -->
 
 
 
-	<!-- Footer-->
-	<footer class="footer py-4">
-		<div class="container">
-			<div class="row align-items-center">
-				<div class="col-lg-4 text-lg-start">Copyright &copy;Hotel Casa de Piedra 2022</div>
-				<div class="col-lg-4 my-3 my-lg-0">
-					<a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/Lacasadepiedraelseco?mibextid=LQQJ4d" target="_Black" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-					<a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/Lacasadepiedraelseco?mibextid=LQQJ4d" target="_Black" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-				</div>
-				<div class="col-lg-4 text-lg-end">
-					<a class="link-dark text-decoration-none me-3" href="#!">Política de privacidad
-					</a>
-					<a class="link-dark text-decoration-none" href="sistema.php">Sistema Hotel
-					</a>
-				</div>
-			</div>
-		</div>
-	</footer>
+	<?php require('../../frontend/seccionWeb/fotter.php'); ?>
 </body>
 
 </html>

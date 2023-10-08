@@ -1,35 +1,10 @@
+<?php require_once './backend/php/CrearProspecto.php'; ?>
 <!-- Team-->
 <section class="page-section" id="team">
     <div class="container">
         <div class="text-center">
             <h3 class="section-heading text-uppercase">¿Tienes dudas o quieres  un asesoramiento?</h3>           
         </div>
-        <!-- <div class="row">
-            <div class="col-lg-6">
-                <div class="team-member">
-                    <img class="mx-auto rounded-circle" src="./assents/aldahir.png" alt="..." />
-                    <h4>Aldahir Martinez</h4>
-                    <span>Cofundador & director ejecutivo</span>
-                    <p class="text-muted">El liderazgo visionario de Aldahir impulsa el éxito de Engranet al brindar estrategias de marketing digital efectivas y accesibles a las pequeñas empresas.Es un gurú del marketing.</p>
-
-                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Twitter Profile"><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Facebook Profile"><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
-                </div>
-            </div>
-            <div class="col-lg-6">
-                <div class="team-member">
-                    <img class="mx-auto rounded-circle" src="./assents/erick.png" alt="..." />
-                    <h4>Erick Marcia</h4>
-                    <span>Desarrolador FullStack</span>
-                    <p class="text-muted">Un colaborador excepcional que, con su experiencia como programador de area y su compromiso con el éxito empresarial, contribuye significativamente al crecimiento y la prosperidad de las pequeñas empresas y las empresas nacionales, como Soriana, en México.</p>
-
-                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen Twitter Profile"><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen Facebook Profile"><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
-                </div>
-            </div>
-        </div> -->
         <div class="row">
             <div class="col-lg-6 mx-auto text-center">
                 <p class="large text-muted">No dude en llamarnos o enviarnos un correo electrónico,
@@ -63,7 +38,7 @@
         <!-- To make this form functional, sign up at-->
         <!-- https://startbootstrap.com/solution/contact-forms-->
         <!-- to get an API token!-->
-        <form class=".crud-form" id="contactForm" >
+        <form action="./../../backend/php/CrearProspecto.php" method="POST" id="contactForm">
             <div class="row align-items-stretch mb-5">
                 <div class="col-md-6">
                     <div class="form-group">
@@ -82,32 +57,27 @@
                         <input class="form-control"  name="telefono" type="tel" placeholder="Se requiere un número de teléfono *" data-sb-validations="required" />
                         <div class="invalid-feedback" data-sb-feedback="phone:required">Se requiere un número de teléfono.</div>
                     </div>
-
-
-
                     <!--CAMPOS OCULTOS -->
-                    <div class="form-group">
-                        <input class="form-control" type="hidden" name="asunto" value="Prospecto interesado">
-                    </div>
-                    <div class="form-group">
-                        <input class="form-control" type="hidden" name="dominioOrigen" value="engranetmx.com">
-                    </div>
-                    <div class="form-group">
-                        <input class="form-control" type="hidden" name="giroDominio" value="Marketing digital">
-                    </div>
-                    <div class="form-group">
-                        <input class="form-control" type="hidden" name="categoriaProspecto" value="Prospecto">
-                    </div>
-                    <div class="form-group">
-                        <input class="form-control" type="hidden" name="estadoSistema" value="Activo">
-                    </div>
-                    <div class="form-group">
-                        <input class="form-control" type="hidden" name="conversacion" value="Registro desde Pagina web">
-                    </div>
+                        <div class="form-group">
+                            <input class="form-control" type="hidden" name="asunto" value="Prospecto interesado">
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control" type="hidden" name="dominioOrigen" value="engranetmx.com">
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control" type="hidden" name="giroDominio" value="Marketing digital">
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control" type="hidden" name="categoriaProspecto" value="Prospecto">
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control" type="hidden" name="estadoSistema" value="Activo">
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control" type="hidden" name="conversacion" value="Registro desde Pagina web">
+                        </div>
                     <!--FIN CAMPOS OCULTOS -->
-
                 </div>
-
                 <div class="col-md-6">
                     <div class="form-group form-group-textarea mb-md-0">
                         <!-- Message input-->
@@ -123,9 +93,6 @@
             <div class="d-none" id="submitSuccessMessage">
                 <div class="text-center text-white mb-3">
                     <div class="fw-bolder">¡Envío del formulario exitoso!</div> 
-                    <!-- Para activar este formulario, regístrese en
-                    <br />
-                    <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a> -->
                 </div>
             </div>
             <!-- Submit error message-->
@@ -138,7 +105,7 @@
             </div>
             <!-- Submit Button-->
             <div class="text-center">
-                <button class="btn btn-primary btn-xl text-uppercase " id="submitButton" type="submit">Enviar Mensaje</button>
+                <button class="btn btn-primary btn-xl text-uppercase " id="submitButton" type="submit" >Enviar Mensaje</button>
             </div>
         </form>
     </div>
