@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API POST</title>
+</head>
+<body>
+    <form class="form">
+        <input name="nombre" type="text" value="Aldahir">
+        <input name="apellidoPaterno" type="text" value="Arenas">
+        <input name="apellidoMaterno" type="text" value="Martinez">
+        <input name="telefono" type="text" value="2211276404">
+        <input name="correo" type="text" value="austintv52@gmail.com">
+        <input name="asunto" type="text" value="Test Mail">
+        <input name="mensaje" type="text" value="Este es una prueba de MSJ MAIL">
+        <input name="dominioOrigen" type="text" value="engranetmx.com">
+        <input name="giroDominio" type="text" value="Marketing Digital">
+        <input name="categoriaProspecto" type="text" value="LEAD">
+        <input name="estadoSistema" type="text" value="Activo">
+        <input name="conversacion" type="text" value="Creado desde formulario">
+        <input name="fechaNacimiento" type="text" value="03-11-1990">
+        <input name="lugarNacimiento" type="text" value="Puebla">
+        <input name="correoCliente" type="text" value="power_gugus52@hotmail.com">
+        <input name="urlWhatsapp" type="text" value="https://api.whatsapp.com/send/?phone=522212145723&text=Hola+engranet&type=phone_number&app_absent=0">
+        <input name="urlAgedarCita" type="text" value="https://engranetmx.com/index.php?view=recepcion">
+
+        <button type="submit" >Enviar</button>
+    </form>
+
+    <script>
+        const form = document.querySelector('form');
+        
+        const nombre = form.querySelector('input[name="nombre"]').value;
+        const apellidoPaterno = form.querySelector('input[name="apellidoPaterno"]').value;
+        const apellidoMaterno = form.querySelector('input[name="apellidoMaterno"]').value;
+        const telefono = form.querySelector('input[name="telefono"]').value;
+        const correo = form.querySelector('input[name="correo"]').value;
+        const asunto = form.querySelector('input[name="asunto"]').value;
+        const mensaje = form.querySelector('input[name="mensaje"]').value;
+        const dominioOrigen = form.querySelector('input[name="dominioOrigen"]').value;
+        const giroDominio = form.querySelector('input[name="giroDominio"]').value;
+        const categoriaProspecto = form.querySelector('input[name="categoriaProspecto"]').value;
+        const estadoSistema = form.querySelector('input[name="estadoSistema"]').value;
+        const conversacion = form.querySelector('input[name="conversacion"]').value;
+        const fechaNacimiento = form.querySelector('input[name="fechaNacimiento"]').value;
+        const lugarNacimiento = form.querySelector('input[name="lugarNacimiento"]').value;
+        const correoCliente = form.querySelector('input[name="correoCliente"]').value;
+        const urlWhatsapp = form.querySelector('input[name="urlWhatsapp"]').value;
+        const urlAgedarCita = form.querySelector('input[name="urlAgedarCita"]').value;
+
+        
+
+        const datosFormulario = {
+            nombre: nombre,
+            apellidoPaterno: apellidoPaterno,
+            apellidoMaterno: apellidoMaterno,
+            telefono: telefono,
+            asunto: asunto,
+            mensaje: mensaje,
+            dominioOrigen: dominioOrigen,
+            giroDominio: giroDominio,
+            categoriaProspecto: categoriaProspecto,
+            estadoSistema: estadoSistema,
+            conversacion: conversacion,
+            fechaNacimiento: fechaNacimiento,
+            lugarNacimiento: lugarNacimiento,
+            correoCliente: correoCliente,
+            urlWhatsapp: urlWhatsapp,
+            urlAgedarCita: urlAgedarCita
+            // Agrega otros campos aquí si es necesario
+        };
+        //console.log("D: ",datosFormulario);
+        //console.log("[] = " . JSON.stringify(datosFormulario));
+        form.addEventListener('submit', event => {
+            event.preventDefault();
+            const prePayload = new FormData(form);
+            const payload = Object.fromEntries(prePayload);
+            console.log(payload);
+            //console.log("D: ",datosFormulario);
+
+            fetch('https://mexiclientes.engranetmx.com/models/prospecto/AgregarProspecto.php',{
+                headers: {
+                    "Content-Type": "application/json"
+                },//json_decode(file_get_contents("php://input"), true)
+                method : "POST",
+                body: JSON.stringify(payload)
+            })
+            .then(response => response.json())
+            .then(data => {
+                // Procesa la respuesta de la API
+                console.log(data);
+            })
+            .catch(error => {
+                // Maneja los errores de la solicitud
+                console.error(error);
+            });
+            console.log("C: ",data);
+        })
+        console.log("D: ",datosFormulario);
+        // const datosJSON = JSON.stringify(form);
+
+        
+    </script>
+</body>
+</html>
