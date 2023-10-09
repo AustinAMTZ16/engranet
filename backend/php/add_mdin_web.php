@@ -59,60 +59,79 @@
         $adel=0.00;
         $precioCobro = $_POST['precio'];
         $correo = $_POST['email'];
-
+        $correoCliente ='aldahir.dar@gmail.com';
+        $mailAgendarCita = '
+            <table role="presentation" style="width:100%;border-collapse:collapse;border:0;border-spacing:0;background:#ffffff;">
+                <tr>
+                    <td align="center" style="padding:0;">
+                        <table role="presentation" style="width:602px;border-collapse:collapse;border:1px solid #cccccc;border-spacing:0;text-align:left;">
+                            <tr>
+                                <td align="center" style="padding:40px 0 30px 0;">
+                                    <img src="https://engranetmx.com/BackWeb/assets/img/fondo.jpg" alt="" width="90%" style="height:auto;display:block;" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding:36px 30px 42px 30px;">
+                                    <table role="presentation" style="width:100%;border-collapse:collapse;border:0;border-spacing:0;">
+                                        <tr>
+                                            <td style="padding:0 0 36px 0;color:#153643;">
+                                                <span>Hola ' . $correo . '.</span>
+                                                <h1 style="font-size:24px;margin:0 0 5px 0;font-family:Arial,sans-serif;">Tu cita se registro exitosamente.</h1>
+                                                <h1 style="font-size:24px;margin:0 0 20px 0;font-family:Arial,sans-serif;"></h1>
+                                                <p style="margin:0 0 12px 0;font-size:16px;line-height:24px;font-family:Arial,sans-serif;">
+                                                    Un asesor te contactará tan pronto le sea posible para atender cualquier duda que tengas. De igual forma nuestro bot te enviará un mensaje vía Whatsapp para agendar una posible llamada. ﻿Adjuntamos sobre este email una presentación sobre nuestros servicios.
+                                                </p>
+                                                <p style="margin:0;font-size:16px;line-height:24px;font-family:Arial,sans-serif;"><a href="' . $urlWhatsapp . '" target="_blank" style="color:#ee4c50;text-decoration:underline;">Mandar WhatsApp</a></p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding:30px;background:#0B3861;">
+                                    <table role="presentation" style="width:100%;border-collapse:collapse;border:0;border-spacing:0;font-size:9px;font-family:Arial,sans-serif;">
+                                        <tr>
+                                            <td style="padding:0;width:50%;" align="left">
+                                                <p style="margin:0;font-size:14px;line-height:16px;font-family:Arial,sans-serif;color:#ffffff;">
+                                                    &reg; Engranet, Soluciones Digitales 2023<br /><a href="https://www.engranetmx.com" target="_blank" style="color:#ffffff;text-decoration:underline;">engranetmx.com</a>
+                                                </p>
+                                            </td>
+                                            <td style="padding:0;width:50%;" align="right">
+                                                <table role="presentation" style="border-collapse:collapse;border:0;border-spacing:0;">
+                                                    <tr>
+                                                        <td style="padding:0 0 0 10px;width:38px;">
+                                                            <a href="https://www.facebook.com/profile.php?id=100090316568304" target="_blank" style="color:#ffffff;"><img src="https://assets.codepen.io/210284/fb_1.png" alt="Facebook" width="38" style="height:auto;display:block;border:0;" /></a>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        ';
+        $headers = "MIME-Version: 1.0" . "\r\n";
+        $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+        $headers .= "From: MexiClientes@engranetmx.com" . "\r\n";
 
         $statement = $connect->prepare("INSERT INTO reservar (idhab,iddn,feentra,fesal,adel,state,observac) VALUES('$idhab', '$iddn','$feentra','$fesal','$adel','1', '$observac')");
 
-            
-
         $statement2 = $connect->prepare("UPDATE habitaciones SET estadha='2' WHERE idhab= $idhab LIMIT 1;");
-
-
-       
-       
         //echo "$item";
         //Execute the statement and insert our values.
         $inserted = $statement->execute(); 
         $inserted = $statement2->execute(); 
-
-
         if($inserted>0){
-
-            mail($correo, "Soporte agendado", 'Su cita fue agendada un asesor se podra en contacto.');
-            mail('soporte@engranetmx.com', "Soporte agendado", 'El sistema detecto una cita por favor de revisar el sistema de gestion.');
+            mail($correo, "Cita agendada", $mailAgendarCita, $headers);
+            mail($correoCliente, "Cita agendada", $mailAgendarCita, $headers);
         }else{
-                
-
             echo '  ';
-
             print_r($sql->errorInfo()); 
         }
 
-        // if($precioCobro == '260'){
-        //     echo '  <div class="alert alert-primary alert-dismissible fade show" role="alert">
-        //     Pagar Reservación Habitación Sencilla 1 Persona $260.00 MXN 
-        //     <a href="../../index.php?view=paypal260">Pagar Ahora</a>
-        //     </div>';
-        // }elseif ($precioCobro == '290'){
-        //     echo '  <div class="alert alert-primary alert-dismissible fade show" role="alert">
-        //     Pagar Reservación Habitación Sencilla 2 Persona $290.00 MXN 
-        //     <a href="../../index.php?view=paypal290">Pagar Ahora</a>
-        //     </div>';
-        // }elseif($precioCobro == '360'){
-        //     echo '  <div class="alert alert-primary alert-dismissible fade show" role="alert">
-        //     Pagar Reservación Habitación Doble 2 Persona $360.00 MXN 
-        //     <a href="../../index.php?view=paypal360">Pagar Ahora</a>
-        //     </div>';
-        // }elseif($precioCobro == '420'){
-        //     echo '  <div class="alert alert-primary alert-dismissible fade show" role="alert">
-        //     Pagar Reservación Habitación Doble 3 Persona $420.00 MXN 
-        //     <a href="../../index.php?view=paypal420">Pagar Ahora</a>
-        //     </div>';
-        // }elseif($precioCobro == '450'){
-        //     echo '  <div class="alert alert-primary alert-dismissible fade show" role="alert">
-        //     Pagar Reservación Habitación Doble 4 Persona $450.00 MXN 
-        //     <a href="../../index.php?view=paypal450">Pagar Ahora</a>
-        //     </div>';
-        // } 
     }
 ?>

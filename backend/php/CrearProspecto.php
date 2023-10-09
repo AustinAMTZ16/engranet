@@ -49,14 +49,14 @@
                                     <table role="presentation" style="width:100%;border-collapse:collapse;border:0;border-spacing:0;">
                                         <tr>
                                             <td style="padding:0 0 36px 0;color:#153643;">
-                                                <span>Hola ' .$nombre. '.</span>
+                                                <span>Hola ' . $nombre . '.</span>
                                                 <h1 style="font-size:24px;margin:0 0 5px 0;font-family:Arial,sans-serif;">Tu registro fue exitoso.</h1>
                                                 <span>Muchas gracias por compartirnos tus datos. </span>
                                                 <h1 style="font-size:24px;margin:0 0 20px 0;font-family:Arial,sans-serif;"></h1>
                                                 <p style="margin:0 0 12px 0;font-size:16px;line-height:24px;font-family:Arial,sans-serif;">
                                                 Un asesor te contactará tan pronto le sea posible para atender cualquier duda que tengas. De igual forma nuestro bot te enviará un mensaje vía Whatsapp para agendar una posible llamada. ﻿Adjuntamos sobre este email una presentación sobre nuestros servicios.
                                                 </p>
-                                                <p style="margin:0;font-size:16px;line-height:24px;font-family:Arial,sans-serif;"><a href="'.$dominioOrigen.'" target="_blank" style="color:#ee4c50;text-decoration:underline;">Visita nuestro sitio web</a></p>
+                                                <p style="margin:0;font-size:16px;line-height:24px;font-family:Arial,sans-serif;"><a href="' . $dominioOrigen . '" target="_blank" style="color:#ee4c50;text-decoration:underline;">Visita nuestro sitio web</a></p>
                                             </td>
                                         </tr>
                                         <tr>
@@ -70,14 +70,14 @@
                                                             <br>
                                                             ¡Esperamos tu mensaje!
                                                             </p>
-                                                            <p style="margin:0;font-size:16px;line-height:24px;font-family:Arial,sans-serif;"><a href="'.$urlWhatsapp.'" target="_blank" style="color:#ee4c50;text-decoration:underline;">Mandar WhatsApp</a></p>
+                                                            <p style="margin:0;font-size:16px;line-height:24px;font-family:Arial,sans-serif;"><a href="' . $urlWhatsapp . '" target="_blank" style="color:#ee4c50;text-decoration:underline;">Mandar WhatsApp</a></p>
                                                         </td>
                                                         <td style="width:20px;padding:0;font-size:0;line-height:0;">&nbsp;</td>
                                                         <td style="width:260px;padding:0;vertical-align:top;color:#153643;">
                                                             <p style="margin:0 0 25px 0;font-size:16px;line-height:24px;font-family:Arial,sans-serif;"><img src="https://assets.codepen.io/210284/right.gif" alt="" width="260" style="height:auto;display:block;" /></p>
                                                             <p style="margin:0 0 12px 0;font-size:16px;line-height:24px;font-family:Arial,sans-serif;"> Sabemos que tu tiempo es valioso, por lo que te invitamos a agendar una cita con uno de nuestros asesores en línea para que puedas obtener respuestas de manera rápida y personalizada.
                                                             </p>
-                                                            <p style="margin:0;font-size:16px;line-height:24px;font-family:Arial,sans-serif;"><a href="'.$urlAgedarCita.'" target="_blank" style="color:#ee4c50;text-decoration:underline;">Agendar una cita en línea.</a></p>
+                                                            <p style="margin:0;font-size:16px;line-height:24px;font-family:Arial,sans-serif;"><a href="' . $urlAgedarCita . '" target="_blank" style="color:#ee4c50;text-decoration:underline;">Agendar una cita en línea.</a></p>
                                                         </td>
                                                     </tr>
                                                 </table>
@@ -120,7 +120,7 @@
                         <table role="presentation" style="width:602px;border-collapse:collapse;border:1px solid #cccccc;border-spacing:0;text-align:left;">
                             <tr>
                                 <td align="center" style="padding:40px 0 30px 0;">
-                                    <img src="https://engranetmx.com/BackWeb/assets/img/fondo.jpg" alt="" width="90%"  style="height:auto;display:block;" />
+                                    <img src="https://engranetmx.com/BackWeb/assets/img/fondo.jpg" alt="" width="90%" style="height:auto;display:block;" />
                                 </td>
                             </tr>
                             <tr>
@@ -128,12 +128,16 @@
                                     <table role="presentation" style="width:100%;border-collapse:collapse;border:0;border-spacing:0;">
                                         <tr>
                                             <td style="padding:0 0 36px 0;color:#153643;">
-                                                <span>Hola ' .$dominioOrigen. '.</span>
-                                                <h1 style="font-size:24px;margin:0 0 5px 0;font-family:Arial,sans-serif;">Tu registro fue exitoso.</h1>
-                                                <span>Te avisamos que una nueva persona se registro en tu sitio web. ' .$nombre. ' </span>
-                                                <h1 style="font-size:24px;margin:0 0 20px 0;font-family:Arial,sans-serif;"></h1>
-                                                <p style="margin:0 0 12px 0;font-size:16px;line-height:24px;font-family:Arial,sans-serif;">
-                                                </p>
+                                                <span>Hola ' . $dominioOrigen . '.</span>
+                                                <h1 style="font-size:24px;margin:0 0 5px 0;font-family:Arial,sans-serif;">Nuevo registro fue exitoso.</h1>
+                                                <span style="margin:0 0 5px 0;">Te avisamos que una nueva persona se registro en tu sitio web.</span> <br>
+
+                                                <h1 style="font-size:20px;margin:0 0 5px 0;font-family:Arial,sans-serif;">Detalles del registro:</h1>
+                                                <span style="margin:0 0 5px 0;">Nombre registro: ' . $nombre . '</span> <br>
+                                                <span style="margin:0 0 5px 0;">Telefono: ' . $telefono . '</span> <br>
+                                                <span style="margin:0 0 5px 0;">Correo electrónico: ' . $correo . '</span> <br>
+                                                <span style="margin:0 0 5px 0;">Mensaje adjunto: ' . $mensaje . '</span> <br>
+                                                
                                             </td>
                                         </tr>
                                     </table>
