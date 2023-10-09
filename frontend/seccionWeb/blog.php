@@ -1,6 +1,6 @@
 <?php
 	require_once 'backend/config/ConexionBlog.php';
-	$getAllBlog = " SELECT * FROM tb_blog ";
+	$getAllBlog = " SELECT * FROM tb_blog WHERE  webOrigen = 'engranetmx.com' ORDER BY idBlog DESC";
     $query_run = mysqli_query($conn, $getAllBlog);
 ?>
 <!-- Main container start -->
@@ -50,6 +50,7 @@
 													<div >
 														<?php echo $row['decripcionBlog'] ?>
 													</div>
+													<br>
 												</div>
 											</div>
 											<?php
