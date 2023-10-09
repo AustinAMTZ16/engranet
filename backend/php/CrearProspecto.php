@@ -22,7 +22,7 @@
         $correo = $_POST['correo'];
         $asunto = 'Suscripción a Engranet';
         $mensaje = $_POST['mensaje'];
-        $dominioOrigen ='https://'.'engranetmx.com';
+        $dominioOrigen ='engranetmx.com';
         $giroDominio ='Marketing Digital';
         $categoriaProspecto='Soluciones Digitales';
         $estadoSistema ='Activo';
@@ -56,7 +56,7 @@
                                                 <p style="margin:0 0 12px 0;font-size:16px;line-height:24px;font-family:Arial,sans-serif;">
                                                 Un asesor te contactará tan pronto le sea posible para atender cualquier duda que tengas. De igual forma nuestro bot te enviará un mensaje vía Whatsapp para agendar una posible llamada. ﻿Adjuntamos sobre este email una presentación sobre nuestros servicios.
                                                 </p>
-                                                <p style="margin:0;font-size:16px;line-height:24px;font-family:Arial,sans-serif;"><a href="' . $dominioOrigen . '" target="_blank" style="color:#ee4c50;text-decoration:underline;">Visita nuestro sitio web</a></p>
+                                                <p style="margin:0;font-size:16px;line-height:24px;font-family:Arial,sans-serif;"><a href="https://' . $dominioOrigen . '" target="_blank" style="color:#ee4c50;text-decoration:underline;">Visita nuestro sitio web</a></p>
                                             </td>
                                         </tr>
                                         <tr>
