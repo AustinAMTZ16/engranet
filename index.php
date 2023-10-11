@@ -72,6 +72,30 @@
         </script>
     <!-- Messenger Plugin de chat Code -->
 
+
+
+    
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="robots" content="index,follow">
+    <meta name="description" 
+        content="Markting Digital"
+    >
+    <meta name="keywords" 
+        content='diseño de pagina web monterrey, crea pagina web, diseño de paginas web en Monterrey, diseño de paginas web en Puebla, diseño web monterrey, diseño web Puebla, crea sitio web, agencias de marketing digital, paginas web para negocios, sitios web monterrey, desarrollo web monterrey, marketing digital para mi empresa, páginas web monterrey desarrollo web en monterrey, paginas web en monterrey, desarrollo de paginas web monterrey, diseño paginas web monterrey, desarrollo de paginas web en monterrey, email marketing monterrey, creadores de paginas web en monterrey, agencia de diseño web monterrey, diseño de páginas web en monterrey, Diseño web Monterrey, Páginas web Monterrey, Desarrollo web Monterrey, Agencia de diseño web Monterrey, Email marketing Monterrey
+    '>
+
+
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4R80YLVMH6"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-4R80YLVMH6');
+    </script>
+
 </head>
 
 <body id="page-top">
