@@ -1,3 +1,7 @@
+<?php
+	// require('./frontend/seccionWeb/restaurante.php');
+	require('./frontend/seccionWeb/contacto.php');
+?>
 <!-- Main container start -->
 <section class="page-section bg-light" id="team">
     <div class="container">
@@ -166,7 +170,3 @@
 </section>
 <!-- Main container end -->
 
-<?php
-	// require('./frontend/seccionWeb/restaurante.php');
-	require('./frontend/seccionWeb/contacto.php');
-?>
