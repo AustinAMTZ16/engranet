@@ -29,116 +29,147 @@
     <link href="backend/vendor/datatables/buttons.bs.css" rel="stylesheet" />
 
     <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11359331584">
-        </script>
-        <script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11359331584">
+    </script>
+    <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
         gtag('js', new Date());
 
         gtag('config', 'AW-11359331584');
-        </script>
+    </script>
     <!-- Google tag (gtag.js) -->
 
     <!-- Messenger Plugin de chat Code -->
-        <div id="fb-root"></div>
+    <div id="fb-root"></div>
 
-        <!-- Your Plugin de chat code -->
-        <div id="fb-customer-chat" class="fb-customerchat">
-        </div>
+    <!-- Your Plugin de chat code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
 
-        <script>
+    <script>
         var chatbox = document.getElementById('fb-customer-chat');
         chatbox.setAttribute("page_id", "115144064851488");
         chatbox.setAttribute("attribution", "biz_inbox");
-        </script>
+    </script>
 
-        <!-- Your SDK code -->
-        <script>
+    <!-- Your SDK code -->
+    <script>
         window.fbAsyncInit = function() {
             FB.init({
-            xfbml            : true,
-            version          : 'v18.0'
+                xfbml: true,
+                version: 'v18.0'
             });
         };
 
         (function(d, s, id) {
             var js, fjs = d.getElementsByTagName(s)[0];
             if (d.getElementById(id)) return;
-            js = d.createElement(s); js.id = id;
+            js = d.createElement(s);
+            js.id = id;
             js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js';
             fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));
-        </script>
+    </script>
     <!-- Messenger Plugin de chat Code -->
 
 
 
-    
+
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <meta name="robots" content="index,follow">
-    <meta name="description" 
-        content="Markting Digital"
-    >
-    <meta name="keywords" 
-        content='diseño de pagina web monterrey, crea pagina web, diseño de paginas web en Monterrey, diseño de paginas web en Puebla, diseño web monterrey, diseño web Puebla, crea sitio web, agencias de marketing digital, paginas web para negocios, sitios web monterrey, desarrollo web monterrey, marketing digital para mi empresa, páginas web monterrey desarrollo web en monterrey, paginas web en monterrey, desarrollo de paginas web monterrey, diseño paginas web monterrey, desarrollo de paginas web en monterrey, email marketing monterrey, creadores de paginas web en monterrey, agencia de diseño web monterrey, diseño de páginas web en monterrey, Diseño web Monterrey, Páginas web Monterrey, Desarrollo web Monterrey, Agencia de diseño web Monterrey, Email marketing Monterrey
+    <meta name="description" content="Markting Digital">
+    <meta name="keywords" content='diseño de pagina web monterrey, crea pagina web, diseño de paginas web en Monterrey, diseño de paginas web en Puebla, diseño web monterrey, diseño web Puebla, crea sitio web, agencias de marketing digital, paginas web para negocios, sitios web monterrey, desarrollo web monterrey, marketing digital para mi empresa, páginas web monterrey desarrollo web en monterrey, paginas web en monterrey, desarrollo de paginas web monterrey, diseño paginas web monterrey, desarrollo de paginas web en monterrey, email marketing monterrey, creadores de paginas web en monterrey, agencia de diseño web monterrey, diseño de páginas web en monterrey, Diseño web Monterrey, Páginas web Monterrey, Desarrollo web Monterrey, Agencia de diseño web Monterrey, Email marketing Monterrey
     '>
 
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-C7VPC57YSW"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
 
-    gtag('config', 'G-C7VPC57YSW');
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-C7VPC57YSW');
     </script>
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11359331584"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
 
-    gtag('config', 'AW-11359331584');
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'AW-11359331584');
     </script>
 
     <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-NSL6KSCK');</script>
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-NSL6KSCK');
+    </script>
     <!-- End Google Tag Manager -->
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11359331584"></script>
     <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'AW-11359331584');
+    </script>
+
+    <!-- Event snippet for User_Contact conversion page
+    In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+    <script>
+        function gtag_report_conversion(url) {
+            var callback = function() {
+                if (typeof(url) != 'undefined') {
+                    window.location = url;
+                }
+            };
+            gtag('event', 'conversion', {
+                'send_to': 'AW-11359331584/gj0ACM3Xx-sYEIDKxqgq',
+                'event_callback': callback
+            });
+            return false;
+        }
+    </script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11359331584"></script>
+    <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
 
     gtag('config', 'AW-11359331584');
     </script>
-
-    <!-- Event snippet for User_Contact conversion page
-In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
-<script>
-function gtag_report_conversion(url) {
-  var callback = function () {
-    if (typeof(url) != 'undefined') {
-      window.location = url;
-    }
-  };
-  gtag('event', 'conversion', {
-      'send_to': 'AW-11359331584/gj0ACM3Xx-sYEIDKxqgq',
-      'event_callback': callback
-  });
-  return false;
-}
-</script>
 
 
 </head>
@@ -147,21 +178,21 @@ function gtag_report_conversion(url) {
     <?php require('./frontend/seccionWeb/header.php'); ?>
 
     <?php
-        // mostrar.php
-        if (isset($_GET["view"]) && $_GET["view"] != "") {
-            $url = "frontend/seccionWeb/" . $_GET["view"] . ".php";
-            if (file_exists($url)) {
-                include $url;
-            } else {
-                echo "<h1>404 PAGINA NO ENCONTRADA</h1>";
-            }
+    // mostrar.php
+    if (isset($_GET["view"]) && $_GET["view"] != "") {
+        $url = "frontend/seccionWeb/" . $_GET["view"] . ".php";
+        if (file_exists($url)) {
+            include $url;
         } else {
-            include "./frontend/seccionWeb/home.php";
+            echo "<h1>404 PAGINA NO ENCONTRADA</h1>";
         }
+    } else {
+        include "./frontend/seccionWeb/home.php";
+    }
     ?>
 
     <?php require('./frontend/seccionWeb/fotter.php'); ?>
-    
+
     <a href="https://wa.me/522212145723?text=Hola engranet" target="_blank" class="boton-flotante"><i class="fab fa-whatsapp"></i></a>
 
     <style>
@@ -175,8 +206,10 @@ function gtag_report_conversion(url) {
             text-align: center;
             font-size: 25px;
             position: fixed;
-            bottom: 20px; /* Ajusta la distancia desde la parte inferior */
-            left: 20px; /* Ajusta la distancia desde la derecha */
+            bottom: 20px;
+            /* Ajusta la distancia desde la parte inferior */
+            left: 20px;
+            /* Ajusta la distancia desde la derecha */
             cursor: pointer;
             text-decoration: none;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -188,46 +221,46 @@ function gtag_report_conversion(url) {
         }
     </style>
 
-    
+
 
     <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="BackWeb/js/scripts.js"></script>
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- * *                               SB Forms JS                               * *-->
-        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="BackWeb/js/scripts.js"></script>
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <!-- * *                               SB Forms JS                               * *-->
+    <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
 
-        <!-- Required jQuery first, then Bootstrap Bundle JS -->
-        <script src="backend/js/jquery.min.js"></script>
-        <script src="backend/js/bootstrap.bundle.min.js"></script>
-        <script src="backend/js/moment.js"></script>
+    <!-- Required jQuery first, then Bootstrap Bundle JS -->
+    <script src="backend/js/jquery.min.js"></script>
+    <script src="backend/js/bootstrap.bundle.min.js"></script>
+    <script src="backend/js/moment.js"></script>
 
-        <!-- Data Tables -->
-        <script src="backend/vendor/datatables/dataTables.min.js"></script>
-        <script src="backend/vendor/datatables/dataTables.bootstrap.min.js"></script>
-
-
-        <!-- Custom Data tables -->
-        <script src="backend/vendor/datatables/custom/custom-datatables.js"></script>
-        <script src="backend/vendor/datatables/custom/fixedHeader.js"></script>
+    <!-- Data Tables -->
+    <script src="backend/vendor/datatables/dataTables.min.js"></script>
+    <script src="backend/vendor/datatables/dataTables.bootstrap.min.js"></script>
 
 
+    <!-- Custom Data tables -->
+    <script src="backend/vendor/datatables/custom/custom-datatables.js"></script>
+    <script src="backend/vendor/datatables/custom/fixedHeader.js"></script>
 
-        <!-- Main JS -->
-        <script src="backend/js/main.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
 
-        <!-- Slimscroll JS -->
-        <script src="backend/vendor/slimscroll/slimscroll.min.js"></script>
-        <script src="backend/vendor/slimscroll/custom-scrollbar.js"></script>
-        <!-- Core theme JS-->
+
+    <!-- Main JS -->
+    <script src="backend/js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+
+    <!-- Slimscroll JS -->
+    <script src="backend/vendor/slimscroll/slimscroll.min.js"></script>
+    <script src="backend/vendor/slimscroll/custom-scrollbar.js"></script>
+    <!-- Core theme JS-->
     <!-- Bootstrap core JS-->
 
     <!-- Google Tag Manager (noscript) -->
-        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NSL6KSCK" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NSL6KSCK" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
 </body>
 
