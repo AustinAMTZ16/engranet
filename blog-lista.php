@@ -301,7 +301,7 @@
             </div>
         </footer>
         <!-- Footer End -->
-
+        <a href="https://wa.me/522212145723?text=Hola engranet" target="_blank" class="boton-flotante"><i class="zmdi zmdi-whatsapp"></i></a>
         <!-- Google Tag Manager (Austintv52@gmail.com) -->
         <noscript>
             <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NSL6KSCK" height="0" width="0" style="display:none;visibility:hidden"></iframe>
