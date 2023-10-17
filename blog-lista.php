@@ -215,7 +215,7 @@
                             <p>Conce las mejores herramientas que google ofrece para tu negocio.</p>
                         </div>
                         <div class="newsletter-form mc_embed_signup">
-                            <form action="registroweb.php" method="post">
+                            <form class="formSucriptor" action="registroweb.php" method="post">
                                 <div id="mc_embed_signup_scroll" class="mc-form"> 
 
                                     <input type="email" value="" name="correo" class="email"  placeholder="Introduzca su dirección de correo electrónico" required>
