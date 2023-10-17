@@ -95,18 +95,18 @@
 
     <!-- Header Area Start -->
     <header class="top">
-        <div class="header-top">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 col-sm-12">
-                        <div class="header-top-left">
-                            <p>
-                                Tienes alguna pregunta?
-                                <a style="color: aliceblue;" href="tel:+528180789607">+52 81 8078 9607</a>
-                            </p>
-                        </div>
-                    </div>
-                    <!-- <div class="col-md-4 col-sm-4">
+		<div class="header-top">
+		        <div class="container">
+		            <div class="row">
+		                <div class="col-md-12 col-sm-12">
+		                    <div class="header-top-left">
+		                        <p> 
+                                    Tienes alguna pregunta?  
+                                    <a style="color: aliceblue;" href="tel:+528180789607">+52 81 8078 9607</a>
+                                </p>
+		                    </div>
+		                </div>
+		                <!-- <div class="col-md-4 col-sm-4">
 		                    <div class="header-top-right text-md-end text-center">
 		                        <ul>
 		                            <li><a href="login.html">Sistema</a></li>
@@ -114,40 +114,40 @@
 		                        </ul>
 		                    </div>
 		                </div> -->
-                </div>
-            </div>
-        </div>
-        <div class="header-area two header-sticky">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-3 col-sm-5 col-6">
-                        <div class="logo">
-                            <a href="index.html"><img src="img/logo/logo2.png" alt="eduhome" /></a>
-                        </div>
-                    </div>
-                    <div class="col-md-9 col-sm-7 col-6">
-                        <div class="content-wrapper text-end">
-                            <!-- Main Menu Start -->
-                            <div class="main-menu">
-                                <nav>
-                                    <ul>
-                                        <li><a href="index.html">Inicio</a></li>
-                                        <li><a href="acerca.html">Acerca de</a></li>
-                                        <li><a href="servicios.html">Servicios</a></li>
-                                        <li><a href="blog-lista.php">blog</a></li>
-                                        <li><a href="contacto.html">Contacto</a></li>
-                                    </ul>
-                                </nav>
+		            </div>
+		        </div>
+		</div>
+		<div class="header-area two header-sticky">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-3 col-sm-5 col-6">
+							<div class="logo">
+								<a href="index.html"><img src="img/logo/logo2.png" alt="eduhome" /></a>
+							</div>
+						</div>
+						<div class="col-md-9 col-sm-7 col-6">
+                            <div class="content-wrapper text-end">
+                                <!-- Main Menu Start -->
+                                <div class="main-menu">
+                                    <nav>
+                                        <ul>
+                                            <li><a class="nav-link" href="index.html">Inicio</a></li>
+                                            <li><a class="nav-link" href="acerca.html">Acerca de</a></li>
+                                            <li><a class="nav-link" href="servicios.html">Servicios</a></li>
+                                            <li><a class="nav-link" href="blog-lista.php">blog</a></li>
+                                            <li><a class="nav-link" href="contacto.html">Contacto</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
                             </div>
+						</div>
+                        <div class="col-12">
+                            <div class="mobile-menu hidden-sm"></div> 
                         </div>
-                    </div>
-                    <div class="col-12">
-                        <div class="mobile-menu hidden-sm"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
+					</div>
+				</div>
+		</div>
+	</header>
     <!-- Header Area End -->
 
     <!-- Event Area Start -->
