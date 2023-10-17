@@ -180,7 +180,7 @@
                 <div class="reply-area">
                     
                 Folio cita:<?php echo $d->numiha; ?>
-                    <form  action="registroagenda.php" method="POST">
+                    <form class="formInteresado"  action="registroagenda.php" method="POST">
                         <div class="row">
                             <div class="col-md-12">
                                 <p>Nombre completo</p>
