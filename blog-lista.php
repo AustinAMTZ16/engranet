@@ -207,16 +207,18 @@
                 ?>
                     <div class="col-lg-4 col-md-6">
                         <div class="single-course mb-70">
-                            <div class="course-img">
-                                <?php
-                                    echo'<img src="data:image/jpeg;base64,' . $row['imagenBlog'] . '" alt="Imagen en base64">';
-                                ?>
-                            </div>
-                            <div class="course-content">
-                                <h3><?php echo $row['tituloBlog'] ?></h3>
-                                <p><?php echo $row['decripcionBlog'] ?></p>
-                                <!-- <a class="default-btn" href="course-details.html">read more</a> -->
-                            </div>   
+                            <a href="<?php echo $row['accionBlog']; ?>">
+                                <div class="course-img" style="width: 100%;height: 200px;overflow: hidden;">
+                                    <?php
+                                        echo'<img src="data:image/jpeg;base64,' . $row['imagenBlog'] . '" alt="Imagen en base64" width="95%">';
+                                    ?>
+                                </div>
+                                <div class="course-content">
+                                    <h3><?php echo $row['tituloBlog'] ?></h3>
+                                    <!-- <p><?php //echo $row['decripcionBlog'] ?></p> -->
+                                    <!-- <a class="default-btn" href="course-details.html">read more</a> -->
+                                </div>  
+                            </a>
                         </div>
                     </div>
                 <?php
@@ -229,7 +231,6 @@
             </div> 
         </div>       
         <!-- Course End -->
-        
         <!-- Subscribe Start -->
         <div class="subscribe-area pt-60 pb-70">
             <div class="container">
