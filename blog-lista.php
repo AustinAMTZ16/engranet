@@ -1,6 +1,6 @@
 <?php
 	require_once './config/ConexionBlog.php';
-	$getAllBlog = " SELECT * FROM tb_blog WHERE  webOrigen = 'engranetmx.com' ORDER BY idBlog DESC";
+	$getAllBlog = " SELECT * FROM tb_blog WHERE  webOrigen = 'engranetmx.com' AND blogEstado = 0 ORDER BY idBlog DESC";
     $query_run = mysqli_query($conn, $getAllBlog);
 ?>
 <!doctype html>
